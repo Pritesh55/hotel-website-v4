@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: SteakAndCheeseBrush2;
+    src: url(../font/SteakAndCheeseBrush-Regular.ttf);
+}
+
+
 :root {
     --base-font-family: "Montserrat", sans-serif;
 
@@ -15,7 +23,7 @@
     --menu-font-size: var(--base-font-size);
     --menu-font-weight: var(--font-semibold);
 
-    --header-height:92px;
+    --header-height: 92px;
     /* -------------------------------------- */
 
     /* -------------------------------------- */
@@ -28,4 +36,171 @@
     --nav-btn-bg-color: var(--light-blue);
     --nav-btn-color: var(--normal-blue);
     /* -------------------------------------- */
+
+
+
+    /*  */
+
+    --pl-full-img-title-lg: 20px;
+    --mobile-offset-dec-height-p1: 0px;
+
+    --full-img-title-lg: 64px;
+    --full-img-subtitle-lg: 44px;
+    --full-img-para-lg: 20px;
+
+    /*  */
+    --img-subtitle-font-family: "SteakAndCheeseBrush2", sans-serif;
+    --img-subtitle-font-weight: var(--font-regular);
+
+    --full-img-para-font-weight: var(--font-semibold);
+
+    /*  */
+
+    --flex-dir-hero-section-p2: row;
+    --half-img-p2-width: 50%;
+
+    --half-img-title-lg: 40px;
+    --half-img-subtitle-lg: 36px;
+    --half-img-para-lg: 20px;
+
+    --half-img-pl: 8%;
+    --img-bottom-for-text-position: 10%;
+
+    /*  */
+    --flex-dir-hero-section-p3: row;
+    --one-third-img-p3-width: 33.33%;
+
+    --one-third-img-title-lg: 32px;
+    --one-third-img-subtitle-lg: 32px;
+    --one-third-img-para-lg: 16px;
+
+    --one-third-img-pl: 12%;
+}
+
+@media screen and (max-width: 1320px) {
+
+    :root {
+
+        --full-img-title-lg: 48px;
+        --full-img-subtitle-lg: 40px;
+        --full-img-para-lg: 32px;
+
+        --pl-full-img-title-lg: 8%;
+
+
+        --half-img-title-lg: 30px;
+        --half-img-subtitle-lg: 28px;
+        --half-img-para-lg: 16px;
+
+
+        --one-third-img-title-lg: 24px;
+        --one-third-img-subtitle-lg: 24px;
+        --one-third-img-para-lg: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+
+        --full-img-title-lg: 40px;
+        --full-img-subtitle-lg: 40px;
+        --full-img-para-lg: 24px;
+
+        --half-img-title-lg: 24px;
+        --half-img-subtitle-lg: 24px;
+        --half-img-para-lg: 14px;
+
+
+        --one-third-img-title-lg: 21px;
+        --one-third-img-subtitle-lg: 21px;
+        --one-third-img-para-lg: 14px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    :root {
+
+        --full-img-title-lg: 32px;
+        --full-img-subtitle-lg: 32px;
+        --full-img-para-lg: 16px;
+
+        --half-img-title-lg: 21px;
+        --half-img-subtitle-lg: 21px;
+        --half-img-para-lg: 14px;
+
+
+        --one-third-img-title-lg: 18px;
+        --one-third-img-subtitle-lg: 18px;
+        --one-third-img-para-lg: 12px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    :root {
+
+        --flex-dir-hero-section-p2: column;
+        --flex-dir-hero-section-p3: column;
+
+        --half-img-p2-width: 100%;
+        --one-third-img-p3-width: 100%;
+
+        --full-img-title-lg: 32px;
+        --full-img-subtitle-lg: 32px;
+        --full-img-para-lg: 16px;
+
+        --half-img-title-lg: 26px;
+        --half-img-subtitle-lg: 26px;
+        --half-img-para-lg: 18px;
+
+
+        --one-third-img-title-lg: 26px;
+        --one-third-img-subtitle-lg: 26px;
+        --one-third-img-para-lg: 18px;
+
+        --half-img-pl: 8%;
+        --one-third-img-pl: 8%;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    :root {
+
+        --mobile-offset-dec-height-p1: 120px;
+
+        --flex-dir-hero-section-p2: column;
+        --flex-dir-hero-section-p3: column;
+
+        --half-img-p2-width: 100%;
+        --one-third-img-p3-width: 100%;
+
+        --full-img-title-lg: 24px;
+        --full-img-subtitle-lg: 28px;
+        --full-img-para-lg: 16px;
+
+        --half-img-title-lg: 24px;
+        --half-img-subtitle-lg: 24px;
+        --half-img-para-lg: 16px;
+
+
+        --one-third-img-title-lg: 24px;
+        --one-third-img-subtitle-lg: 24px;
+        --one-third-img-para-lg: 16px;
+
+        --half-img-pl: 8%;
+        --one-third-img-pl: 8%;
+
+    }
+
 }

@@ -117,7 +117,7 @@ a.nav-link {
     }
 
     .nav-menubar-outer-box {
-        max-height: calc(100vh - 92px);
+        max-height: calc(100vh - var(--header-height));
         overflow: scroll;
         padding-bottom: 20px;
     }
