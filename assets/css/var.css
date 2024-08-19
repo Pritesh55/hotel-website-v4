@@ -1,0 +1,31 @@
+:root {
+    --base-font-family: "Montserrat", sans-serif;
+
+    /*  */
+    --base-font-size: 1rem;
+    --base-font-weight: 400;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* -------------------------------------- */
+    --menu-font-size: var(--base-font-size);
+    --menu-font-weight: var(--font-semibold);
+
+    --header-height:92px;
+    /* -------------------------------------- */
+
+    /* -------------------------------------- */
+    --sky-blue-200: #daf0fd;
+    --sky-blue-400: #2f94cb;
+
+    --light-blue: var(--sky-blue-200);
+    --normal-blue: var(--sky-blue-400);
+
+    --nav-btn-bg-color: var(--light-blue);
+    --nav-btn-color: var(--normal-blue);
+    /* -------------------------------------- */
+}

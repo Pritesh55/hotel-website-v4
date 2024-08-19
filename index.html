@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel vital</title>
+
+    <link rel="stylesheet" href="assets/css/var.css">
+    <link rel="stylesheet" href="assets/css/body-responsive.css">
+    <link rel="stylesheet" href="assets/css/navbar-toggle-icon.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class=" header">
+        <nav class="navbar container-xl">
+            <!-- navbar-logo -->
+            <div class="navbar-logo">
+                <a href="#" class="" class="">
+                    <img src="assets/img/logo/main-logo.png" width="96" height="96" alt="">
+                </a>
+            </div>
+
+            <button class="navbar-toggle-btn" type="button" onclick="mobileMenuToggle(event)">
+                <img src="assets/img/icons/menu-line.svg" width="20" height="20" alt="" class="nav-open-icon show">
+                <img src="assets/img/icons/close-line.svg" width="20" height="20" alt="" class="nav-close-icon">
+            </button>
+
+            <!-- navbar-menu -->
+            <div class="nav-menubar-outer-box">
+                <ul class="nav-menubar">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Hotel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Kulinarik
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Parktherme
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Familie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Preise
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Massage & Kosmetik
+                        </a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a href="#" class="nav-link">
+                            Saison Highlights
+                        </a>
+                    </li>
+
+
+                    <div class="">
+                        <img src="assets/img/icons/menu-line.svg" width="20" height="20" class="">
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="">
+        <div class="hero-section-p1">
+            <div class="img-outer-box">
+                <img src="assets/img/woman-floating-on-water.jpg" alt="" class="darken-img-v1">
+
+                <div class="img-text container-xl">
+                    <h3 class="img-subtitle"> Buchen </h3>
+                    <h4 class="img-title"> Bei uns Entspannung pur </h4>
+                    <p class="img-para">Jetzt Buchen</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<script>
+    /*=============== SHOW MENU ===============*/
+    function mobileMenuToggle(event) {
+        const mobileMenu = document.querySelector('.nav-menubar-outer-box');
+        const mobileMenuOpenIcon = document.querySelector('.nav-open-icon');
+        const mobileMenuCloseIcon = document.querySelector('.nav-close-icon');
+        if (mobileMenu) {
+            mobileMenu.classList.toggle('show');
+            mobileMenuCloseIcon.classList.toggle('show');
+            mobileMenuOpenIcon.classList.toggle('show');
+        }
+    }
+    /*=============== SHOW MENU ===============*/
+</script>
+
+</html>

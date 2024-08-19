@@ -1,0 +1,21 @@
+.navbar-toggle-btn {
+    display: none;
+}
+
+.nav-close-icon {
+    display: none;
+}
+
+.nav-open-icon,
+.nav-close-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-toggle-btn {
+        display: block;
+    }
+
+
+}

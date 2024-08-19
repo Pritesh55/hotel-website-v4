@@ -1,0 +1,121 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px 10px;
+    /* logo and menubar */
+}
+
+
+ul.nav-menubar {
+    list-style: none;
+    /* to remove :: bullets ahead of li */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* menubar and humburger Icon */
+
+    row-gap: 16px;
+    column-gap: 32px;
+}
+
+li.nav-item {
+    padding: 8px 0;
+}
+
+li.nav-item.nav-btn {
+    padding: 10px 20px;
+    background-color: var(--nav-btn-bg-color);
+    border-radius: 8px;
+}
+
+li.nav-item.nav-btn .nav-link {
+    color: var(--nav-btn-color);
+}
+
+
+a.nav-link {
+    text-decoration: none;
+    /* to remove :: underline below of text */
+
+    color: black;
+    font-size: var(--base-font-size);
+    font-weight: var(--menu-font-weight);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .navbar-logo {
+        margin-top: 5px;
+        margin-bottom: -50px;
+
+        background: white;
+        padding: 0 20px 10px 20px;
+        border-radius: 12px;
+
+        position: relative;
+        z-index: 100;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .navbar-logo img {
+        width: 64px;
+        height: 64px;
+    }
+
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-menubar-outer-box {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    ul.nav-menubar {
+        padding-inline-start: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        row-gap: 16px;
+    }
+
+    .nav-menubar-outer-box {
+        width: 100%;
+    }
+
+    /* ------------------------- */
+    .nav-menubar-outer-box,
+    .nav-open-icon,
+    .nav-close-icon {
+        display: none;
+    }
+
+    .nav-menubar-outer-box.show {
+        display: block;
+    }
+
+    .nav-close-icon.show,
+    .nav-open-icon.show {
+        display: inline-block;
+    }
+
+    /* ------------------------- */
+
+}
