@@ -116,6 +116,24 @@ a.nav-link {
         display: inline-block;
     }
 
+    .nav-menubar-outer-box {
+        max-height: calc(100vh - 92px);
+        overflow: scroll;
+        padding-bottom: 20px;
+    }
+
+    .nav-item {
+        padding: 0;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    li.nav-item.nav-btn {
+        width: auto;
+    }
+
     /* ------------------------- */
 
 }
