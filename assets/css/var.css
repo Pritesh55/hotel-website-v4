@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
 @font-face {
     font-family: SteakAndCheeseBrush2;
     src: url(../font/SteakAndCheeseBrush-Regular.ttf);
@@ -8,6 +12,7 @@
 
 :root {
     --base-font-family: "Montserrat", sans-serif;
+    --curvy-font-family-nice: "Dancing Script", cursive;
 
     /*  */
     --base-font-size: 1rem;
@@ -35,6 +40,8 @@
 
     --nav-btn-bg-color: var(--light-blue);
     --nav-btn-color: var(--normal-blue);
+
+    --light-gray-text-color: #494a67;
     /* -------------------------------------- */
 
 
@@ -49,7 +56,7 @@
     --full-img-para-lg: 20px;
 
     /*  */
-    --img-subtitle-font-family: "SteakAndCheeseBrush2", sans-serif;
+    --curvy-font-family-steak: "SteakAndCheeseBrush2", sans-serif;
     --img-subtitle-font-weight: var(--font-regular);
 
     --full-img-para-font-weight: var(--font-semibold);
@@ -75,9 +82,22 @@
     --one-third-img-para-lg: 16px;
 
     --one-third-img-pl: 12%;
+
+    /* ----------------------------------------------------- */
+    --py-blog-post: 20px 0;
+    --row-gap-blog-post-btwn-text-and-img-section: 80px;
+    --blog-post-section-tite-para-lg: 44px;
+    --blog-post-section-tite-para-lg-line-height: 1.25;
+
+    --blog-post-section-subtitle-lg: 48px;
+
+    --mt-blog-post: 8%;
+    --width-blog-post: 45%;
+    --height-blog-post-img: 760px;
+    --row-gap-blog-post: 0px;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1336px) {
 
     :root {
 
@@ -96,6 +116,8 @@
         --one-third-img-title-lg: 24px;
         --one-third-img-subtitle-lg: 24px;
         --one-third-img-para-lg: 16px;
+
+        --blog-post-section-tite-para-lg: 40px;
     }
 
 }
@@ -117,6 +139,10 @@
         --one-third-img-title-lg: 21px;
         --one-third-img-subtitle-lg: 21px;
         --one-third-img-para-lg: 14px;
+
+
+        --blog-post-section-tite-para-lg: 32px;
+        --blog-post-section-tite-para-lg-line-height: 1.5;
     }
 
 }
@@ -137,6 +163,11 @@
         --one-third-img-title-lg: 18px;
         --one-third-img-subtitle-lg: 18px;
         --one-third-img-para-lg: 12px;
+
+        --py-blog-post: 0px 0;
+        --row-gap-blog-post-btwn-text-and-img-section: 20px;
+        --blog-post-section-tite-para-lg: 24px;
+
     }
 
 }
@@ -166,6 +197,19 @@
 
         --half-img-pl: 8%;
         --one-third-img-pl: 8%;
+
+        /* *-------------------------- */
+
+        --blog-post-section-tite-para-lg: 20px;
+        --blog-post-section-tite-para-lg-line-height: 1.5;
+
+        --blog-post-section-subtitle-lg: 40px;
+        --mt-blog-post: 0;
+        --width-blog-post: 90%;
+        --width-blog-post: 100%;
+        /* *-------------------------- */
+        --height-blog-post-img: 300px;
+        --row-gap-blog-post: 40px;
 
     }
 
@@ -201,6 +245,8 @@
         --half-img-pl: 8%;
         --one-third-img-pl: 8%;
 
+        --blog-post-section-tite-para-lg: 18px;
+        --height-blog-post-img: auto;
     }
 
 }

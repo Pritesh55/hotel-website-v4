@@ -27,7 +27,7 @@ body {
     height: 100%;
 
     /* ----------------------------- */
-    filter: brightness(0.5);
+    filter: brightness(0.6);
     /* ----------------------------- */
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .hero-section-p1 .img-outer-box .img-text .img-subtitle {
-    font-family: var(--img-subtitle-font-family);
+    font-family: var(--curvy-font-family-steak);
     font-size: var(--full-img-subtitle-lg);
     font-weight: 400;
     margin: 0;
@@ -107,7 +107,7 @@ body {
 
 
     /* ----------------------------- */
-    filter: brightness(0.6);
+    filter: brightness(0.65);
     /* ----------------------------- */
 }
 
@@ -145,7 +145,7 @@ body {
     font-size: var(--half-img-subtitle-lg);
     /* 36px */
     margin: 0;
-    font-family: SteakAndCheeseBrush2;
+    font-family: var(--curvy-font-family-steak);
     font-weight: 400;
 
     max-height: 90px;
@@ -193,7 +193,7 @@ body {
 
 
     /* ----------------------------- */
-    filter: brightness(0.5);
+    filter: brightness(0.65);
     /* ----------------------------- */
 }
 
@@ -234,7 +234,7 @@ body {
     font-size: var(--one-third-img-subtitle-lg);
     /* 36px */
     margin: 0;
-    font-family: SteakAndCheeseBrush2;
+    font-family: var(--curvy-font-family-steak);
     font-weight: 400;
 
     max-height: 90px;
