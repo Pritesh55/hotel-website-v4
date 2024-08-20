@@ -37,6 +37,7 @@
 
     --light-blue: var(--sky-blue-200);
     --normal-blue: var(--sky-blue-400);
+    --medium-blue: #51a5d3;
 
     --nav-btn-bg-color: var(--light-blue);
     --nav-btn-color: var(--normal-blue);
@@ -84,7 +85,7 @@
     --one-third-img-pl: 12%;
 
     /* ----------------------------------------------------- */
-    --py-blog-post: 20px 0;
+    --py-blog-post: 80px 0;
     --row-gap-blog-post-btwn-text-and-img-section: 80px;
     --blog-post-section-tite-para-lg: 44px;
     --blog-post-section-tite-para-lg-line-height: 1.25;
@@ -95,6 +96,20 @@
     --width-blog-post: 45%;
     --height-blog-post-img: 760px;
     --row-gap-blog-post: 0px;
+    /* ---------------------------------------------------- */
+
+    --height-of-cards-in-row-galry: 560px;
+    --width-of-cards-in-row-galry: 32%;
+
+    --cross-message-box-padding: 150px 0;
+
+    --card-title-lg: 22px;
+    --card-subtitle-lg: 28px;
+
+    --s4-title-lg: 34px;
+    --s4-subtitle-lg: 28px;
+
+    --s4-flex-boxes:50%;
 }
 
 @media screen and (max-width: 1336px) {
@@ -118,6 +133,11 @@
         --one-third-img-para-lg: 16px;
 
         --blog-post-section-tite-para-lg: 40px;
+        --py-blog-post: 40px 0;
+
+        --s4-title-lg: 28px;
+        --s4-subtitle-lg: 28px;
+        --cross-message-box-padding: 80px 0;
     }
 
 }
@@ -143,6 +163,12 @@
 
         --blog-post-section-tite-para-lg: 32px;
         --blog-post-section-tite-para-lg-line-height: 1.5;
+
+
+        --height-of-cards-in-row-galry: 100%;
+
+        --s4-title-lg: 24px;
+        --s4-subtitle-lg: 28px;
     }
 
 }
@@ -164,9 +190,12 @@
         --one-third-img-subtitle-lg: 18px;
         --one-third-img-para-lg: 12px;
 
-        --py-blog-post: 0px 0;
-        --row-gap-blog-post-btwn-text-and-img-section: 20px;
+        --py-blog-post: 40px 0 0;
+        --row-gap-blog-post-btwn-text-and-img-section: 40px;
         --blog-post-section-tite-para-lg: 24px;
+
+
+        --s4-title-lg: 18px;
 
     }
 
@@ -210,7 +239,10 @@
         /* *-------------------------- */
         --height-blog-post-img: 300px;
         --row-gap-blog-post: 40px;
+        --width-of-cards-in-row-galry: 100%;
 
+
+        --s4-flex-boxes:100%;
     }
 
 }
@@ -247,6 +279,12 @@
 
         --blog-post-section-tite-para-lg: 18px;
         --height-blog-post-img: auto;
+
+        --py-blog-post: 20px 0;
+        --card-title-lg: 18px;
+        --card-subtitle-lg: 24px;
+
+
     }
 
 }

@@ -5,6 +5,11 @@ body {
     font-weight: var(--base-font-weight);
 }
 
+.px-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /* ------------------------------------------------- */
 .hero-section-p1 {

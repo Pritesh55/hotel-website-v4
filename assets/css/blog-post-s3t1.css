@@ -1,6 +1,4 @@
 .blog-post-s3t1-spacing {
-    padding: 80px 0;
-
     padding: var(--py-blog-post);
     display: flex;
     flex-direction: column;
@@ -14,7 +12,6 @@
     justify-content: flex-start;
 
     width: 92%;
-
 }
 
 .blog-post-2col-3row-text-section .blog-post-section-subtitle {
@@ -23,7 +20,7 @@
     color: var(--normal-blue);
     font-weight: var(--font-medium);
 
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .blog-post-2col-3row-text-section .blog-post-section-title-para {
@@ -35,14 +32,10 @@
     font-weight: var(--font-medium);
     color: var(--light-gray-text-color);
 
-    margin-top: 0;
+    margin: 0;
 }
 
 /* ------------------------------------------------------------------------ */
-
-.blog-post-s3t1-2col-3row {
-    padding: 0 20px;
-}
 
 .cards-arr-up-down-2col {
     display: flex;
@@ -55,7 +48,6 @@
 }
 
 .cards-lg-ht-spacing:nth-child(2n+1) {
-
     /* --------------- */
     margin-top: var(--mt-blog-post);
     /* --------------- */
@@ -75,12 +67,12 @@
     row-gap: 16px;
 }
 
-.card-image-area img {
+.card-image-area img,
+.card-img {
     width: 100%;
     height: var(--height-blog-post-img);
     object-fit: cover;
     border-radius: 12px;
-
 }
 
 .card-text-area {
@@ -97,13 +89,63 @@
 
 .card-subtitle {
     font-family: var(--curvy-font-family-steak);
-    font-size: 28px;
+    font-size: var(--card-subtitle-lg);
     color: var(--normal-blue);
     font-weight: var(--font-medium);
 }
 
 .card-title {
-    font-size: 22px;
+    font-size: var(--card-title-lg);
     color: var(--light-gray-text-color);
     font-weight: var(--font-bold);
+}
+
+/* --------------------------------------------------------------- */
+.cards-row-galry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    row-gap: 40px;
+}
+
+.cards-row-galry .cards-width-box {
+    width: var(--width-of-cards-in-row-galry);
+}
+
+.cards-row-galry .cards-width-box .card-img {
+    height: var(--height-of-cards-in-row-galry);
+}
+
+.cards-row-galry .card-image-area {
+    height: 100%;
+}
+
+.cards-row-galry-section  {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.bg-color-top-div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -5;
+    background-color: var(--medium-blue);
+}
+
+.bg-color-bottom-div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    z-index: -5;
+    background-color: #e6f3fa;
+}
+
+.cards-row-galry-section .blog-post-section-title-para, 
+.cards-row-galry-section .blog-post-section-subtitle {
+    color: white;
+   
 }
