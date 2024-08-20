@@ -97,7 +97,7 @@
 
     --mt-blog-post: 8%;
     --width-blog-post: 45%;
-    --height-blog-post-img: 760px;
+    --height-of-cards-lg-ht: 760px;
     --row-gap-blog-post: 0px;
     /* ---------------------------------------------------- */
 
@@ -112,9 +112,19 @@
     --s4-title-lg: 34px;
     --s4-subtitle-lg: 28px;
 
-    --s4-flex-boxes-width:50%;
+    --s4-flex-boxes-width: 50%;
     /* half-section-width :: 50% :: all screen , 100% :: lower than 768px  */
 }
+
+
+@media screen and (max-width: 1536px) {
+
+    :root {
+        --blog-post-section-tite-para-lg: 40px;
+    }
+}
+
+
 
 @media screen and (max-width: 1336px) {
 
@@ -243,12 +253,12 @@
         --width-blog-post: 90%;
         --width-blog-post: 100%;
         /* *-------------------------- */
-        --height-blog-post-img: 300px;
+        --height-of-cards-lg-ht: 300px;
         --row-gap-blog-post: 40px;
         --width-of-cards-in-row-galry: 100%;
 
 
-        --s4-flex-boxes-width:100%;
+        --s4-flex-boxes-width: 100%;
         /* half-section-width :: 50% :: all screen , 100% :: lower than 768px  */
     }
 
@@ -285,7 +295,7 @@
         --one-third-img-pl: 8%;
 
         --blog-post-section-tite-para-lg: 18px;
-        --height-blog-post-img: auto;
+        --height-of-cards-lg-ht: auto;
 
         --py-blog-post: 20px 0;
         --card-title-lg: 18px;
