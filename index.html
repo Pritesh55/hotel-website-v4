@@ -707,7 +707,7 @@
     const nextbutton = document.querySelector('.nextButton'); // Replace with your actual button selector
     nextbutton.addEventListener('click', function () {
 
-        if (ActiveSlideNum < (totalSlides - 3)) {
+        if (ActiveSlideNum < (totalSlides - 1)) {
             ActiveSlideNum++;
             updateTransform();
             console.log('ActiveSlideNum is increased to = ', ActiveSlideNum);
@@ -715,7 +715,7 @@
 
 
         // If we reach the last slide (clone of the first), reset to the first slide wit
-        if (ActiveSlideNum >= (totalSlides - 3)) {
+        if (ActiveSlideNum >= (totalSlides - 1)) {
             setTimeout(() => {
                 slideContainer.style.transition = 'none'; // Disable transition
                 ActiveSlideNum = 0; // Reset to the first slide
