@@ -13,11 +13,12 @@
 }
 
 
-.slider-inner-card-section {
+.slideContainer {
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
 
+    width: 100%;
 
 }
 
@@ -38,4 +39,126 @@
 
 .slider-card-section .card-img {
     height: 300px;
+}
+
+.slider-title-section {
+    margin-bottom: 60px;
+}
+
+.sl-intro-text-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 40px;
+
+}
+
+.sl-btn-flexbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+
+.prevButton img {
+    transform: rotate(180deg);
+}
+
+button.prevButton,
+button.nextButton {
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+}
+
+
+.prevButton:hover,
+.nextButton:hover {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(63%) saturate(1800%) hue-rotate(170deg) brightness(83%) contrast(88%);
+}
+
+
+.goto-link {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    cursor: pointer;
+}
+
+.slider-goto-link-box {
+    margin-top: 80px;
+}
+
+.slider-section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.slider-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (min-width: 1336px) {
+    .slider-section {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .slideContainer {
+        gap: 20px;
+    }
+
+    .slider-card-section .card {
+        min-width: 48%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .slider-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .slider-title-section {
+        margin-bottom: 40px;
+    }
+
+    .sl-intro-text-flexbox {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+    }
+
+    .sl-btn-flexbox {
+        justify-content: flex-start;
+    }
+
+    .slideContainer .card-title {
+        font-size: 18px;
+    }
+
+    .slideContainer .card-subtitle {
+        font-size: 24px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .slider-card-section .card {
+        min-width: 100%;
+    }
+
 }
