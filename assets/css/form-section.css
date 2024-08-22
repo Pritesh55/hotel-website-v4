@@ -1,0 +1,140 @@
+.bg-light-green {
+    background-color: rgb(231, 243, 250);
+
+}
+
+.form-section {
+    width: 100%;
+}
+
+.form-section-heading {
+    font-family: var(--curvy-font-family-nice);
+    font-size: 52px;
+    margin: 0;
+}
+
+.form-section-para {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(73, 74, 103);
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.form-flex-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form-section-bx4 .form-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 24px);
+    row-gap: 4px;
+    min-width: 220px;
+}
+
+.date-label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(73, 74, 103);
+}
+
+.form-input-box {
+    background-color: white;
+    width: 100%;
+    display: flex;
+
+    border: 2px solid rgb(218, 240, 253);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 0 12px 20px;
+    font-size: 18px;
+    color: rgb(144, 144, 144);
+    border: none;
+    border-radius: 8px;
+}
+
+.form-input:focus-visible {
+    outline: none;
+}
+
+.dateInput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../img/icons/calendar-line-icon.svg') no-repeat right 20px center;
+    background-size: 16px 16px;
+    /* Adjust size as needed */
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.form-select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../img/icons/down-arrow.png') no-repeat right 20px center;
+    background-size: 24px 24px;
+}
+
+.form-submit-btn-box {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    border: none;
+}
+
+.form-submit-btn-box .form-submit {
+    width: 100%;
+    background-color: #8dd7ff;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    color: black;
+}
+
+
+@media screen and (max-width: 992px) {
+    .form-section-bx4 .form-group {
+        width: calc(33.33% - 24px);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-section-bx4 .form-group {
+        width: calc(50% - 24px);
+    }
+
+    .form-section-heading {
+        font-size: 44px;
+    }
+
+    .form-section-para {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-section-bx4 .form-group {
+        width: 100%;
+    }
+
+}
