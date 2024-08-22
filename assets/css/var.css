@@ -86,7 +86,9 @@
 
     /* ----------------------------------------------------- */
 
-    --py-basic-spacing: 80px 0;
+    --py-section-spacing-start: 160px 0 160px;
+    --py-section-spacing: 0 0 160px;
+    --py-section-spacing-footer: 160px 0 0;
 
     --py-blog-post: 80px 0;
     --row-gap-blog-post-btwn-text-and-img-section: 80px;
@@ -243,7 +245,9 @@
 
         /* *-------------------------- */
 
-        --py-basic-spacing: 40px 0;
+        --py-section-spacing-start: 40px 0 40px;
+        --py-section-spacing: 40px 0;
+        --py-section-spacing-footer: 40px 0 0;
 
         --blog-post-section-tite-para-lg: 20px;
         --blog-post-section-tite-para-lg-line-height: 1.5;

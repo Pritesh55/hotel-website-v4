@@ -81,33 +81,32 @@ button.nextButton {
 
 
 .goto-link {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 8px;
     cursor: pointer;
+    color: #494a67;
 }
 
 .slider-goto-link-box {
     margin-top: 80px;
+    display: flex;
+    row-gap: 20px;
+    column-gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .slider-section {
-    padding-top: 160px;
     padding-bottom: 160px;
 }
 
-.slider-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 
-@media screen and (min-width: 1336px) {
+@media screen and (max-width: 1336px) {
     .slider-section {
-        padding-top: 160px;
-        padding-bottom: 160px;
+        padding-bottom: 80px;
     }
-
 }
 
 
@@ -126,7 +125,6 @@ button.nextButton {
 
 @media screen and (max-width: 768px) {
     .slider-section {
-        padding-top: 80px;
         padding-bottom: 80px;
     }
 
@@ -152,13 +150,25 @@ button.nextButton {
         font-size: 24px;
     }
 
-
+    .goto-link {
+        font-size: 18px;
+    }
 
 }
 
 @media screen and (max-width: 576px) {
     .slider-card-section .card {
         min-width: 100%;
+    }
+
+    .slider-goto-link-box {
+        margin-top: 40px;
+    }
+
+
+    .slider-card-section .card-img {
+        max-height: 300px;
+        height: auto;
     }
 
 }
