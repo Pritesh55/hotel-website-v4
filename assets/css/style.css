@@ -328,7 +328,7 @@ hr.gray-line {
 .cta-flex-box {
     /* background-color:  #8dd7ff; */
     background: linear-gradient(91.9deg, #72b6dc 6.3%, #3999ce 98.9%);
-    padding: 60px 0 80px;
+    padding: 60px 20px 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -352,6 +352,7 @@ hr.gray-line {
     font-family: Helvetica, sans-serif;
     font-size: 26px;
     font-weight: 700;
+    text-align: center;
 }
 
 
@@ -361,6 +362,9 @@ hr.gray-line {
     display: flex;
     align-items: center;
     column-gap: 20px;
+    row-gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -387,15 +391,22 @@ footer {
     display: flex;
     justify-content: space-between;
     column-gap: 24px;
+    row-gap: 48px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .ft-group {
-    width: calc(25% - 24px);
+    width: calc(24% - 24px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 8px;
+}
+
+
+.ft-contact-group {
+    min-width: 280px;
 }
 
 .ft-group-title {
@@ -414,10 +425,29 @@ footer {
     row-gap: 4px;
 }
 
+.ft-ul.ft-logo-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+
+    /* max-width: 230px; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    row-gap: 16px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+}
+
 .ft-item {
     font-size: 20px;
     line-height: 1.75;
     font-weight: 500;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    align-items: center;
 }
 
 .ft-address {
@@ -438,9 +468,17 @@ footer {
 }
 
 
+@media screen and (max-width: 1400px) {
+    .ft-group {
+        width: calc(25% - 24px);
+    }
+}
+
+
+
 @media screen and (max-width: 992px) {
     .ft-group {
-        width: calc(33.33% - 24px);
+        width: calc(50% - 24px);
     }
 
 }
@@ -450,6 +488,24 @@ footer {
 
     .ft-group {
         width: calc(50% - 24px);
+    }
+
+    .cta-container {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: -120px;
+    }
+
+    .cta-flex-box {
+        padding: 60px 20px 60px;
+    }
+
+    .cta-subtitle {
+        font-size: 28px;
+    }
+
+    .cta-title {
+        font-size: 24px;
     }
 }
 

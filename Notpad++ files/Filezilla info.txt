@@ -1,0 +1,86 @@
+
+
+:: Live website 
+https://www.vital-hotel.at/
+
+:: xd file ::
+https://xd.adobe.com/view/72a62074-c75e-464c-ac9c-266fd6fd9a7b-27f5/
+
+::Pdf file ::
+C:\Users\bhupe\Documents\GitHub\File-Zilla-Files
+\Vital-Hotel-2-Design-File.pdf
+
+
+---------------------------------------------
+Open Download an SFTP Client:  "FileZilla"
+--------------
+
+Open "the Site manager" 				:: first tool Icon on Toolbar... 
+
+Then click on "new site" ::
+
+Then on, "General tab" ::
+	Select Protocol name ::  sFTP- SSH File transfer Protocol ::
+	Host: julius.koerbler.com
+	User: revital
+	Password: 3HuZmvd=4
+	
+Then click on connect ::
+----------------------------------------------------------------------------
+Now 2 options are There ....
+
+1) Local site :: Go to this path ::
+	----------------------
+	All files will be downloaded to here....
+	C:\Users\bhupe\Documents\GitHub\File-Zilla-Files\
+	----------------------------------------------------
+
+2) Remote Site ::
+---------------------
+	/ => home => revital /
+	Navigate to the Desired Path:
+
+	Go to the path 
+	----------------------------------------------------------
+	#0 => Advanced > Default remote directory:
+	-------------------------
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources
+	---------------------------------------------------------
+	
+	
+	#01 :: Homeredesign.html file.
+	-------------------------
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Private/Templates/Page
+	Filename ::: Homeredesign.html
+	-----------------------------------------
+	
+	
+	#02 :: Other pages ::(Mobile menu, header, navigation, footer)
+	-------------------
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Private/Partials/Page
+	-------------------
+		Filenames:
+		 Mobile menu, header, main navigation and footer: 
+
+			- MobileNavigation.html (Mobile menu)
+			- Header.html			(header)
+			- Navigation.html		(main navigation)
+			- Search.html
+			- Footer.html			(footer)
+	---------------------------------------------------------
+	
+	
+	#3 CSS / JS / Images etc inside Public folder: 
+	-------------------------
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Public
+	/Stylesheets/Assets :: custom.css
+
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Public/
+	Javascript :: custom.js
+	
+	
+---------------------------------------------
+
+https://www.vital-hotel.at/typo3temp/assets/vhs-assets-btstrp-ckbnnr-fncybx-fntwsm-main-slck-sslct.css?1724518071
+vhs-assets-btstrp-ckbnnr-fncybx-fntwsm-main-slck-sslct.css?1724518071
+Line no :: 147

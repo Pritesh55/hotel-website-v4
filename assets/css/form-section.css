@@ -97,6 +97,7 @@
     width: 100%;
     height: 48px;
     border: none;
+    justify-content: center;
 }
 
 .form-submit-btn-box .form-submit {
