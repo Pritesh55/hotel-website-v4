@@ -1,0 +1,95 @@
+$accordionheaderfontsize: $fontSize;
+
+.Accordion{
+    .accordion{
+        .card{
+            border-radius: 0;
+            border: 0;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+
+            &:last-child{
+                margin-bottom:0;
+            }
+
+            .card-header{
+                background: $decoColor;
+                padding: 0;
+                border-radius: 0;
+
+                h5{
+                    line-height: 0;
+                    margin:0;
+                    padding:0;
+                    font-size: $accordionheaderfontsize;
+                    line-height: $basetextLineheight / $accordionheaderfontsize;
+                    color: #fff;
+                    font-weight: 700;
+                }
+
+                .btn.btn-link{
+                    margin: 0;
+                    padding: 15px 15px 15px 80px;
+                    border:0;
+                    width: 100%;
+                    text-align: left;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    color: inherit;
+                    text-decoration: none;
+                    transition: none;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    
+                    &:not(.collapsed){
+                        &:after {
+                            transform: rotate(90deg);
+                        }
+                    }
+
+                    &:after {
+                        content: "\f054";
+                        font-family: Font Awesome\ 5 Pro;
+                        position: absolute;
+                        left: 20px;
+                        top: 10px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 1;
+                        transition: all 0.3s;
+                        color: $decoColor;
+                        background: #fff;
+                        border: 1px solid #E6E6E6;
+                        border-radius: 100%;
+                        height: 32px;
+                        width: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .colla{
+                background: none;
+
+                .card-body{
+                    padding: 25px 15px 25px 80px;
+                    color: #4B4B52;
+                    border: 1px solid #979797;
+                    @media screen and (max-width: $md-min-screen - 1) {
+                        padding-left: 20px;
+                    }
+
+                    p{
+                        padding-bottom: 5px;
+
+                        &:last-child{
+                            padding-bottom:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

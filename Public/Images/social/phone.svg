@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Vitalhotel-Startseite" transform="translate(-1492.000000, -12.000000)" fill="#FFFFFF">
+            <g id="Group-72" transform="translate(1154.000000, 10.000000)">
+                <g id="Group-48" transform="translate(298.000000, 2.000000)">
+                    <g id="phone" transform="translate(40.000000, 0.000000)">
+                        <path d="M3,6.5 C4.16666667,8.83333333 6.16666667,10.75 8.5,12 L10.3333333,10.1666667 C10.5833333,9.91666667 10.9166667,9.83333333 11.1666667,10 C12.0833333,10.3333333 13.0833333,10.5 14.1666667,10.5 C14.6666667,10.5 15,10.8333333 15,11.3333333 L15,14.1666667 C15,14.6666667 14.6666667,15 14.1666667,15 C6.33333333,15 0,8.66666667 0,0.833333333 C0,0.333333333 0.333333333,0 0.833333333,0 L3.75,0 C4.25,0 4.58333333,0.333333333 4.58333333,0.833333333 C4.58333333,1.83333333 4.75,2.83333333 5.08333333,3.83333333 C5.16666667,4.08333333 5.08333333,4.41666667 4.91666667,4.66666667 L3,6.5 L3,6.5 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

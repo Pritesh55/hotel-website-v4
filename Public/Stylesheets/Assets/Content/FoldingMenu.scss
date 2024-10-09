@@ -1,0 +1,88 @@
+$iconwidth: 56px;
+$iconheight: 56px;
+
+.FoldingMenu{
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 99;
+    @media screen and (min-width: $md-min-screen){
+        margin-top: -40px; //height discountmenu / 2
+        position: absolute;
+        right: 40px;
+    }
+
+    .item{
+        position: relative;
+        margin: 10px 0;
+
+        &:hover,
+        &:focus{
+            .title{
+                width: 200px + $iconwidth;
+            }
+        }
+
+        a{
+            color: inherit;
+            text-decoration: none;
+
+            &:hover,
+            &:focus{
+                .icon{
+                    background: $decoColor2;
+                }
+            }
+        }
+
+        .title{
+            position: absolute;
+            width: 0;
+            overflow: hidden;
+            right: calc(#{$iconwidth} / 2);
+            transition: all 0.3s;
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.86;
+            font-size: $fontSize - 2;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            max-width: calc(100vw - #{$iconwidth} - 30px);
+            @media screen and (min-width: $md-min-screen){
+                max-width: calc(100vw - #{$iconwidth} - 55px);
+            }
+
+            .inner{
+                //min-height: 44px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 10px calc(#{$iconwidth} / 2) 10px 15px;
+            }
+        }
+
+        .icon{
+            z-index: 1;
+            position: relative;
+            height: $iconheight;
+            width: $iconwidth;
+            background: $decoColor;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            transition: all 0.3s;
+
+            img{
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+    }
+}

@@ -1,5 +1,3 @@
-
-
 :: Live website 
 https://www.vital-hotel.at/
 
@@ -7,8 +5,13 @@ https://www.vital-hotel.at/
 https://xd.adobe.com/view/72a62074-c75e-464c-ac9c-266fd6fd9a7b-27f5/
 
 ::Pdf file ::
-C:\Users\bhupe\Documents\GitHub\File-Zilla-Files
-\Vital-Hotel-2-Design-File.pdf
+C:\Users\bhupe\Documents\GitHub\File-Zilla-Files\
+Vital-Hotel-2-Design-File.pdf
+
+
+::change-InnerPage
+C:\Users\bhupe\Documents\GitHub\File-Zilla-Files\Safe\Safe-Upload\
+innerpages-feedback.pdf
 
 
 ---------------------------------------------
@@ -72,8 +75,7 @@ Now 2 options are There ....
 	
 	#3 CSS / JS / Images etc inside Public folder: 
 	-------------------------
-	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Public
-	/Stylesheets/Assets :: custom.css
+	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Public/Stylesheets/Assets :: custom.css
 
 	/home/revital/public_html/typo3conf/ext/providerpackage/Resources/Public/
 	Javascript :: custom.js
@@ -81,6 +83,7 @@ Now 2 options are There ....
 	
 ---------------------------------------------
 
-https://www.vital-hotel.at/typo3temp/assets/vhs-assets-btstrp-ckbnnr-fncybx-fntwsm-main-slck-sslct.css?1724518071
-vhs-assets-btstrp-ckbnnr-fncybx-fntwsm-main-slck-sslct.css?1724518071
-Line no :: 147
+1200px - 1260px => container => 1140px , font-size :: 13px
+1260px - up 	=> container => 1200px , font-size :: 14px
+
+blog-post-s3t1-spacingની ઉપર ના div માં mt-5,pt-5...

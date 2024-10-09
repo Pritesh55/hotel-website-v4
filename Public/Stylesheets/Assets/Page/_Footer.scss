@@ -1,0 +1,347 @@
+$topfooterBackgroundColor: $decoColor;
+$topfooterPadding: 37px 0;
+$topfooterFontSize: 20px;
+$topfooterLetterSpacing: 1px;
+$topfooterTextColor: #fff;
+$topfooterLinkColor: $decoColor;
+$topfooterLinkEventColor: $decoColor2;
+
+$middlefooterBackgroundColor: #fff;
+$middlefooterPadding: 60px 0;
+$middlemobilefooterPadding: 40px 0;
+$middlefooterFontSize: $fontSize - 2;
+$middlefooterLetterSpacing: 0;
+$middlefooterTextColor: $decoColor;
+$middlefooterLinkColor: $decoColor;
+$middlefooterLinkEventColor: $decoColor2;
+
+$bottomfooterBackgroundColor: $decoColor3;
+$bottomfooterPadding: 30px 0;
+$bottomfooterFontSize: $fontSize - 2;
+$bottomfooterLetterSpacing: -0.6px;
+$bottomfooterTextColor: #fff;
+$bottomfooterLinkColor: $decoColor;
+$bottomfooterLinkEventColor: $decoColor2;
+
+/*Footer*/
+
+footer {
+	&>.row > .frame:first-child{
+		h1, h2, h3, h4, h5, h6{
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+
+	a{
+		&:hover,
+		&:focus{
+			text-decoration: none;
+		}
+	}
+
+	p{
+		font-size: inherit;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+	.frame ul{
+		list-style: none;
+		padding: 0;
+		margin:0 -15px;
+
+		li{
+			padding: 0 15px;
+			margin: 0;
+			display: inline-block;
+			@media screen and (max-width:767px) {
+				display: table;
+			}
+
+			&:before{
+				content: none;
+			}
+		}
+	}
+
+	.toprow,
+	.middlerow,
+	.bottomrow{
+		@media screen and (max-width:767px) {
+			text-align: center;
+		}
+	}
+
+	.topfooter{
+		background-color: $topfooterBackgroundColor;
+		padding: $topfooterPadding;
+		font-size: $topfooterFontSize;
+		letter-spacing: $topfooterLetterSpacing;
+		color: $topfooterTextColor;
+
+		.container .container{
+			padding:0;
+        }
+
+        b,
+        strong{
+            font-family: $fontFamily2;
+        }
+
+        .btn{
+            margin:0 15px;
+            border: 1px solid transparent;
+
+            &.btn-secondary{
+                &:hover,
+                &:focus{
+                    border: 1px solid $decoColor2;
+                }
+            }
+        }
+
+        p{
+            &:last-child{
+                padding-bottom:0;
+            }
+        }
+
+		a{
+			color: $topfooterLinkColor;
+
+			&:hover,
+			&:focus{
+				color: $topfooterLinkEventColor;
+			}
+		}
+
+		ul{
+			li{
+				a{
+					padding: 5px 0;
+					display: block;
+				}
+			}
+        }
+
+        .tx-powermail{
+            font-size: 14px;
+        }
+	}
+
+	.middlefooter{
+		background-color: $middlefooterBackgroundColor;
+		padding: $middlefooterPadding;
+		font-size: $middlefooterFontSize;
+		line-height: 22px / $middlefooterFontSize;
+		letter-spacing: $middlefooterLetterSpacing;
+		color: $middlefooterTextColor;
+		max-width: 1030px;
+		margin: auto;
+		@media screen and (max-width: $lg-min-screen - 1){
+			padding: $middlemobilefooterPadding;
+
+			&> .container{
+				&> .row{
+					flex-direction: column-reverse;
+
+					&> .col{
+						&.col-12:first-child{
+							margin-top: 20px;
+							margin-bottom: 0;
+						}
+						&.col-12:last-child{
+							margin-bottom: 20px;
+							margin-top: 0;
+						}
+					}
+				}
+			}
+
+			.ce-textpic:not(.ce-intext).ce-center .ce-gallery .ce-row, .ce-image:not(.ce-intext).ce-center .ce-gallery .ce-row{
+				justify-content: normal;
+			}
+		}
+
+		@media screen and (max-width: $lg-min-screen - 1){
+			.col .frame-type-providerpackage_threecolumns .col:last-child{
+				display: none;
+			}
+		}
+
+		.leftfooter{
+			position: relative;
+
+			&:before{
+				content: " ";
+				position: absolute;
+				background: #A8CFE4;
+				height: 1px;
+				width: 100%;
+				width: calc(100% - 60px);
+				right: 30px;
+				top: -21px;
+				@media screen and (min-width: $lg-min-screen){
+					height: 80%;
+					width: 1px;
+					top: 10%;
+				}
+			}
+		}
+
+		h1, h2, h3, h4, h5, h6{
+			margin-bottom: 5px;
+
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+
+		h3{
+			font-size: 18px;
+			letter-spacing: -0.5px;
+		}
+
+		ul{
+			li{
+				width: 100%;
+			}
+		}
+
+		.ce-image{
+			figure{
+				margin-bottom: 0.5rem;
+
+				img{
+					transition: all 0.3s;
+				}
+
+				a{
+					&:hover{
+						img{
+							filter: none;
+							-webkit-filter: sepia(1);
+							-webkit-filter: sepia(100%);
+							-moz-filter: sepia(100%);
+							-ms-filter: sepia(100%);
+							-o-filter: sepia(100%);
+							filter: sepia(100%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bottomfooter{
+		background-color: $bottomfooterBackgroundColor;
+		padding: $bottomfooterPadding;
+		font-size: $bottomfooterFontSize;
+		letter-spacing: $bottomfooterLetterSpacing;
+		color: $bottomfooterTextColor;
+
+		&>.container .row{
+			@media screen and (min-width: $md-min-screen){
+				&>.col.col-md-7{
+					-ms-flex: 0 0 61%;
+					flex: 0 0 61%;
+					max-width: 61%;
+				}
+				&>.col.col-md-5{
+					-ms-flex: 0 0 39%;
+					flex: 0 0 39%;
+					max-width: 39%;
+				}
+			}
+		}
+
+		.ce-image{
+			.ce-gallery{
+				.ce-row{
+					align-items: center;
+
+					.ce-column{
+						@media screen and (max-width: $xl-min-screen - 1){
+							max-width: 15%;
+						}
+						@media screen and (max-width: $lg-min-screen - 1){
+							max-width: 14%;
+							padding-left: 2px;
+							padding-right: 2px;
+						}
+
+						figure{
+							margin:0;
+						}
+					}
+				}
+			}
+		}
+
+		.container.frame{
+			padding:0;
+		}
+
+		a{
+			color: $bottomfooterLinkColor;
+
+			&:hover,
+			&:focus{
+				color: $bottomfooterLinkEventColor;
+			}
+		}
+
+		p{
+			padding:0;
+		}
+
+		.col{
+			text-align: center;
+		}
+
+		@media screen and (min-width: $sm-min-screen) {
+			.col{
+				justify-content: left;
+				display: flex;
+				align-items: center;
+
+			}
+			.col + .col{
+				justify-content: right;
+			}
+		}
+
+		ul.footerNav{
+			margin:0;
+			padding:0;
+			width: 100%;
+			@media screen and (min-width: $md-min-screen) {
+				text-align: right;
+			}
+
+			li{
+				display: inline-block;
+				font-weight: 700;
+				padding: 0 1.5%;
+				@media screen and (min-width: $lg-min-screen) {
+					padding: 0 3.5%;
+				}
+
+				&:first-child{
+					padding-left: 0;
+				}
+
+				&:last-child{
+					padding-right:0;
+				}
+			}
+		}
+	}
+}
+/*//Footer*/
