@@ -1,4 +1,7 @@
+/* navbar Custom CSS */
+
 .header {
+    font-family: Helvetica, sans-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,13 +39,17 @@ li.nav-item {
 }
 
 li.nav-item.nav-btn {
+    --nav-btn-bg-color: #daf0fd;
+    --nav-btn-color: #2f94cb;
+
+
     padding: 10px 20px;
-    background-color: var(--nav-btn-bg-color);
+    background-color: #daf0fd;
     border-radius: 8px;
 }
 
 li.nav-item.nav-btn .nav-link {
-    color: var(--nav-btn-color);
+    color: #2f94cb;
 }
 
 
@@ -51,11 +58,15 @@ a.nav-link {
     /* to remove :: underline below of text */
 
     color: black;
-    font-size: var(--base-font-size);
-    font-weight: var(--menu-font-weight);
+    /* ----------------------- */
+    font-size: 16px;
+    /* --menu-font-size: var(--base-font-size); */
+    /* ----------------------- */
+    font-weight: 600;
+    /* --menu-font-weight: var(--font-semibold); */
 }
 
-
+/* 
 @media screen and (min-width: 1400px) {
     a.nav-link {
         font-size: 18px;
@@ -69,6 +80,7 @@ a.nav-link {
     }
 
 }
+    */
 
 @media screen and (min-width: 1200px) {
     .navbar-logo {
@@ -85,7 +97,7 @@ a.nav-link {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
 
     .navbar-logo img {
         width: 64px;
@@ -131,7 +143,8 @@ a.nav-link {
     }
 
     .nav-menubar-outer-box {
-        max-height: calc(100vh - var(--header-height));
+        max-height: calc(100vh - 92px);
+        /* max-height: calc(100vh - var(--header-height)); */
         overflow: scroll;
         padding-bottom: 20px;
     }
@@ -151,3 +164,28 @@ a.nav-link {
     /* ------------------------- */
 
 }
+
+
+.navbar-toggle-btn {
+    display: none;
+}
+
+.nav-close-icon {
+    display: none;
+}
+
+.nav-open-icon,
+.nav-close-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-toggle-btn {
+        display: block;
+    }
+
+
+}
+
+/* navbar Custom CSS */

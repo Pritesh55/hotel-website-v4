@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="15px" viewBox="0 0 8 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 8 0 8 15 0 15"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Vitalhotel-Startseite" transform="translate(-1640.000000, -11.000000)">
+            <g id="Group-72" transform="translate(1154.000000, 10.000000)">
+                <g id="Page-1" transform="translate(486.000000, 1.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M5.19264371,15 L5.19264371,8.1578355 L7.55134786,8.1578355 L7.904477,5.49127476 L5.19264371,5.49127476 L5.19264371,3.78879356 C5.19264371,3.016762 5.41278852,2.49059951 6.54981813,2.49059951 L8,2.49000371 L8,0.105060375 C7.74912466,0.0726220739 6.88832988,0 5.88686814,0 C3.79610429,0 2.36468709,1.24265173 2.36468709,3.52478551 L2.36468709,5.49127476 L0,5.49127476 L0,8.1578355 L2.36468709,8.1578355 L2.36468709,15 L5.19264371,15 Z" id="Fill-1" fill="#FCFCFC" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

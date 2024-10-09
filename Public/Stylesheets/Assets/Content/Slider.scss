@@ -1,0 +1,129 @@
+.Slider{
+    .carousel{
+        position: relative;
+
+        &:hover,
+        &:focus{
+            .carousel-control-next, 
+            .carousel-control-prev{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .carousel-inner{
+            background: $textColor;
+            position: relative;
+
+            .carousel-item{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                //max-height: 60vw;
+                min-height: 300px;
+                position: relative;
+                max-height: 60vw;
+                height: 650px;
+                @media screen and (max-width: $md-min-screen - 1){
+                    height: 400px;
+                }
+            }
+        }
+        
+        .carousel-control-next, 
+        .carousel-control-prev{
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            margin-top: -25px;
+            background: #fff;
+            border-radius: 100%;
+            border: 1px solid #E6E6E6;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+            @media screen and (min-width: $md-min-screen){
+                margin-top: -25px - 40px; //50px = height discountmenu / 2
+            }
+
+            .carousel-control-next-icon,
+            .carousel-control-prev-icon{
+                background: none;
+                display: flex;
+                justify-content: inherit;
+                align-items: inherit;
+
+                &:after{
+                    font-family: Font Awesome\ 5 Pro;
+                    color: $textColor;
+                    text-indent: 0;
+                    font-size: $fontSize;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .carousel-control-next{
+            right: 15px;
+            @media screen and (min-width: $md-min-screen){
+                right: -25px;
+            }
+
+            .carousel-control-next-icon{
+                &:after{
+                    content: "\f054";
+                }
+            }
+        }
+
+        .carousel-control-prev{
+            left: 15px;
+            @media screen and (min-width: $md-min-screen){
+                left: -25px;
+            }
+
+            .carousel-control-prev-icon{
+                &:after{
+                    content: "\f053";
+                }
+            }
+        }
+
+        .carousel-indicators{
+            justify-content: right;
+            justify-content: flex-end;
+            margin: auto;
+            padding: 30px 15px 40px;
+            @media screen and (max-width: $md-min-screen - 1){
+                position: static;
+                justify-content: center;
+            }
+
+            li{
+                height: 10px;
+                width: 10px;
+                border: 2px solid $decoColor2;
+                background: none;
+                opacity: 1;
+                margin: 0 7px;
+                transition: all 0.3s;
+
+                &:hover{
+                    opacity: 1;
+                    background: $decoColor2;
+                }
+
+                &.active{
+                    height: 10px;
+                    width: 10px;
+                    background: $decoColor;
+                    background-image: linear-gradient(180deg, $decoColor2 -25%, $decoColor 99.65%);
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

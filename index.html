@@ -6,2150 +6,1093 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel vital</title>
 
-    <link rel="stylesheet" href="assets/css/var.css">
-    <link rel="stylesheet" href="assets/css/body-responsive.css">
-    <link rel="stylesheet" href="assets/css/navbar-toggle-icon.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/blog-post-s3t1.css">
-    <link rel="stylesheet" href="assets/css/card2.css">
-    <link rel="stylesheet" href="assets/css/s4-boxes-section.css">
-    <link rel="stylesheet" href="assets/css/s4-boxes-section.css">
-    <link rel="stylesheet" href="assets/css/slider-card-section.css">
-    <link rel="stylesheet" href="assets/css/form-section.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="Public/Libraries/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Public/Libraries/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="Public/Libraries/Niceselect/css/nice-select.css">
+    <link rel="stylesheet" href="Public/Libraries/Slick/css/slick.css">
+    <link rel="stylesheet" href="Public/Stylesheets/Assets/tempstyle.css">
+    <link rel="stylesheet" href="Public/Stylesheets/Assets/styles.min.css">
+    <link rel="stylesheet" href="Public/Stylesheets/Assets/custom.css">
+
 </head>
 
 <body>
+
     <header class="header">
-        <nav class="navbar container-xl px-5 px-xl-0">
-            <!-- navbar-logo -->
-            <div class="navbar-logo">
-                <a href="#" class="" class="">
-                    <img src="assets/img/logo/main-logo.png" width="96" height="96" alt="">
+        <nav class="navbar container-bt-lg m-auto px-5 px-xl-0"><!-- navbar-logo -->
+            <div class="navbar-logo logo-extra-down"><a href="/" class="logo_custom_img">
+                    <!-- Chcek img src -->
+                    <img src="Public/Images/VH_Logo.png" width="96" height="96" alt="">
                 </a>
             </div>
+            <div class="d-flex row-gap-3 column-gap-5 align-items-center">
+                <li class="nav-item nav-btn d-flex d-md-none red-style-btn-s1-hover"><a href="/saison-highlights/"
+                        class="nav-link">
+                        Saison-Highlights
+                    </a></li><!-- Menues :: Mobile Button -->
 
-            <button class="navbar-toggle-btn" type="button" onclick="mobileMenuToggle(event)">
-                <img src="assets/img/icons/menu-line.svg" width="20" height="20" alt="" class="nav-open-icon show">
-                <img src="assets/img/icons/close-line.svg" width="20" height="20" alt="" class="nav-close-icon">
-            </button>
-
-            <!-- navbar-menu -->
+                <button class="navbar-toggle-btn" type="button"
+                    onclick="mobileMenuToggle(event)"><!-- <img src="Public/Images/icons/menu-line.svg" width="20" height="20" alt="" class="nav-open-icon show"> --><!-- Open Menues ::  --><img
+                        src="Public/Images/icons/menu-svgrepo-com.svg" alt="" width="24" height="24"
+                        class="nav-open-icon show"><!-- close menues --><img src="Public/Images/icons/close-line.svg"
+                        width="36" height="36" alt="" class="nav-close-icon">
+                </button><!-- 3:1) three dots removed -->
+            </div>
             <div class="nav-menubar-outer-box">
                 <ul class="nav-menubar">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Hotel
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Kulinarik
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Parktherme
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Familie
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Preise
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Massage & Kosmetik
-                        </a>
-                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a href="/"
+                                class="nav-link"><span class="">
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Kur
-                        </a>
+                                    Home
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/philosophie-unternehmen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Philosophie | Unternehmen
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/unser-team/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Unser Team
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/home/stammgast/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Stammgast
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/neuigkeiten/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Neuigkeiten
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/veranstaltungen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Veranstaltungen
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/general/kontakt/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Kontakt | Anreise
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/unsere-partner-sponsoren/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Unsere Partner &amp; Sponsoren
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/auszeichnungen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Auszeichnungen
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/urlaub-mit-hund/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Urlaub mit Hund
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/gutscheinpartner/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Gutscheinpartner
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/thermenhotel/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Thermenhotel
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/thermenurlaub/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Thermenurlaub
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/home/e-ladestation/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            E-Ladestation
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
                     </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/wohnen/top-standards/" class="nav-link"><span class="">
 
-                    <li class="nav-item nav-btn">
-                        <a href="#" class="nav-link">
-                            Saison Highlights
-                        </a>
+                                    Wohnen
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/wohnen/top-standards/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Top Standards
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/wohnen/zimmer-wohlfuehlzimmer/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Zimmer | Wohlfühlzimmer
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/wohnen/wochenprogramm/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Wochenprogramm
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
                     </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/kulinarik/koestliche-verfuehrung/" class="nav-link"><span class="">
 
+                                    Kulinarik
 
-                    <div class="nav-item">
-                        <img src="assets/img/icons/menu-line.svg" width="20" height="20" class="">
-                    </div>
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/kulinarik/koestliche-verfuehrung/"
+                                            class="nav-link nav_sub_link"><span class="">
+
+                                                Köstliche Verführung
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/koestliche-verfuehrung/vitalhotel-fruehstuecksbuffet/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Vitalhotel Frühstück
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/koestliche-verfuehrung/cappuccino-kuchenbuffet/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Süße Auszeit
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="https://www.vital-hotel.at/kulinarik/restaurants-cafes/restaurant-fontaene-und-mehrblick/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Halbpension
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/koestliche-verfuehrung/broetchen-vielfalt/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Brötchen Vielfalt
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/kulinarik/restaurants-cafes/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Restaurants &amp; Cafés
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/restaurants-cafes/vitalhotel-dolce-vita-bar/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Vitalhotel Dolce Vita Bar
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/restaurants-cafes/vitalhotel-vital-cafe/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Vitalhotel Vital Café
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/restaurants-cafes/restaurant-fontaene-und-mehrblick/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Restaurant Fontäne und Mehrblick
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/restaurants-cafes/cafe-promenade-und-genussbar/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Café Promenade und Genussbar
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/kulinarik/restaurants-cafes/sb-restaurant-castello-der-parktherme/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        SB-Restaurant Castello der Parktherme
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/kulinarik/kulinarikwochen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Regionale Kulinarik
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/parktherme/therme/" class="nav-link"><span class="">
+
+                                    Parktherme
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/parktherme/therme/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Therme
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/parktherme/sportbecken/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Sportbecken
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/parktherme/saunadorf/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Saunadorf
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/parktherme/heilende-quellen/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Heilende Quellen
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/parktherme/vitalstudio/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Vitalstudio
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/parktherme/kindererlebnisbereich/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Kindererlebnisbereich
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/kur/neu-vita-med-gesundheitszentrum/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Vita med Gesundheitszentrum
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/preise/familienurlaub/" class="nav-link"><span class="">
+
+                                    Familie
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/preise/familienurlaub/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Familienurlaub
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/familie/ferien-im-vitalhotel/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Ferien im Vitalhotel
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/neuigkeiten/news-detail/ausgezeichnetes-kinderessen-57/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Ausgezeichnetes Kinderessen
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/preise/familiensommer/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Familiensommer
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/preise/" class="nav-link"><span class="">
+
+                                    Preise
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/preise/kennenlern-packages/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Kennenlern Packages
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="https://www.vital-hotel.at/preise/vita-est/vita-est/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VITA EST
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/kennenlern-packages/vita-felice/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VITA FELICE
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/kennenlern-packages/vitales-duett/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VITALES DUETT
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/kennenlern-packages/vita-vitale/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VITA VITALE
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/entspannungs-package/therme-sauna/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        RELAX &amp; THERME
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/kennenlern-packages/vita-pura/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VITA PURA
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/preise/kinderangebot/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Kinderangebot
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/preise/wochenpauschalen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Urlaubswoche
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/preise/gesundheits-packages/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Gesundheits Packages
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/gesundheits-packages/privat-kur/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        PRIVAT KUR
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/gesundheits-packages/partnerpauschale-kur/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        PARTNERPAUSCHALE KUR
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/preise/entspannungs-package-1/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Advent, Weihnachten &amp; Silvester
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/entspannungs-package-1/spar-paket/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        SPA(R) PAKET
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/entspannungs-package-1/weihnachten/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        WEIHNACHTEN
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/preise/entspannungs-package-1/silvester/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        SILVESTER
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/preise/familienurlaub/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Familienurlaub
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/preise/einzelnaechtigungspreise/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Einzelnächtigungspreise
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/preise/versicherungspartner/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Versicherungspartner
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/therapie-beauty/kaori-garten/liebling-fuer-dich/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Liebling für Dich
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a href="/preise/gutscheine/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Gutscheine
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/bad-radkersburg/seminare/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Seminare
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/bad-radkersburg/busgruppen/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Busgruppen
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/therapie-beauty/kaori-garten/" class="nav-link"><span class="">
+
+                                    Anwendungen &amp; Beauty
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/therapie-beauty/kaori-garten/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Kosmetik- &amp; Wellnessabteilung KAORI
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori/energie-arbeit/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Energiearbeit - NEU seit 2024
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/vinoble-cosmetics/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        VINOBLE Cosmetics
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/st-barth/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        ST BARTH
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/gesicht/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Gesicht
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/koerperbehandlungen/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Körperbehandlungen
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/wohlfuehlanwendungen/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Wohlfühlanwendungen
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/kombipakete/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Kombipakete
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/microdermabrasion/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Microdermabrasion
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/kinderbehandlungen/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Kinderbehandlungen
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/signature/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Signature
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/das-goenn-ich-mir-zusaetzlich/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Das gönn ich mir zusätzlich
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/zeit-zu-zweit/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Zeit zu zweit
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/therapie-beauty/kaori-garten/liebling-fuer-dich/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Liebling für Dich
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/therapie-beauty/vitalstudio/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Vitalstudio
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/therapie-beauty/natur-und-therapie/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Natur und Therapie
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/therapie-beauty/der-gesundheit-zuliebe/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Der Gesundheit zuliebe
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/bad-radkersburg/region-bad-radkersburg/" class="nav-link"><span class="">
+
+                                    Bad Radkersburg
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/bad-radkersburg/region-bad-radkersburg/"
+                                            class="nav-link nav_sub_link"><span class="">
+
+                                                Region Bad Radkersburg
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="https://www.vital-hotel.at/bad-radkersburg/wander-und-radurlaub/biosphaerenpark-murauen/?no_cache=1"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Biosphärenpark
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/bad-radkersburg/altstadt-bad-radkersburg/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Altstadt Bad Radkersburg
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/bad-radkersburg/wander-und-radurlaub/"
+                                            class="nav-link nav_sub_link"><span class="">
+
+                                                Wandern &amp; Radfahren
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="https://www.vital-hotel.at/saison-highlights/radfahren-in-bad-radkersburg/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Radfahren in Bad Radkersburg
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/sonnenaufgangs-tour/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Sonnenaufgangs Tour
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/grenzenlos-murauen/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Grenzenlos Murauen
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/ptuj-tour/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Ptuj-Tour
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/schiffsmuehlen-tour/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Schiffsmühlen Tour
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/weinberg-tour/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Weinberg Tour
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/traminerweg/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Traminerweg
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/lithopunkturweg/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Lithopunkturweg
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/tau-weg-1/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        TAU-Weg
+
+                                                    </span></a></li>
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/wander-und-radurlaub/tau-weg/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Wasserweg
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/saison-highlights/golf/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Golf
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="https://www.vital-hotel.at/saison-highlights/laufen-und-walken/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Laufen &amp; Nordic Walking
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion">
+                                    <!-- new change 01.02 :: for dd-symbol :: new parent added -->
+                                    <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                            href="/bad-radkersburg/ausflugsziele/" class="nav-link nav_sub_link"><span
+                                                class="">
+
+                                                Ausflugsziele
+
+                                            </span></a>
+                                        <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt=""
+                                                class=""></div>
+                                    </div>
+                                    <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                                        <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                            <li class="nav_sub_item nav-item mobile-accordion"><a
+                                                    href="/bad-radkersburg/ausflugsziele/tipps-fuer-ihren-urlaub/"
+                                                    class="nav_sub_link nav-link"><span class="">
+
+                                                        Tipps für Ihren Urlaub
+
+                                                    </span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/bad-radkersburg/kulinarische-highlights-aus-der-region/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Kulinarische Highlights aus der Region
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/bad-radkersburg/urlaub-im-thermen-und-vulkanland-steiermark/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Urlaub im Thermen- und Vulkanland
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/bad-radkersburg/urlaub-in-der-steiermark/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Urlaub in der Steiermark
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/bad-radkersburg/urlaub-in-oesterreich/"
+                                        class="nav-link nav_sub_link"><span class="">
+
+                                            Urlaub in Österreich
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-accordion"><!-- new change 01.01 :: for dd-symbol :: new parent added -->
+                        <div class="w-100 d-flex flex-nowrap justify-content-between align-items-center"><a
+                                href="/kur/kuraufenthalt-im-vitalhotel/" class="nav-link"><span class="">
+
+                                    Kur
+
+                                </span></a>
+                            <div class="dd-symbol"><img src="Public/Images/icons/dropdown-symbol.svg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="nav_sub_menu closed dropdown-menu dropdown_menu_custom">
+                            <ul class="nav_sub_menu_bar dropdown-inner dropdown_inner_custom">
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/kur/kuraufenthalt-im-vitalhotel/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Kuraufenthalt im Vitalhotel
+
+                                        </span></a></li>
+                                <li class="nav-item nav_sub_item mobile-accordion"><a
+                                        href="/kur/neu-vita-med-gesundheitszentrum/" class="nav-link nav_sub_link"><span
+                                            class="">
+
+                                            Vita med Gesundheitszentrum
+
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-btn"><a href="/saison-highlights/" class="nav-link">
+
+                            Saison-Highlights
+
+                        </a></li>
+                    <div class="nav-item d-none d-md-inline-block" type="button" data-toggle="modal"
+                        data-target="#rightSidebarModal"><img src="Public/Images/icons/menu-svgrepo-com.svg" alt=""
+                            width="24" height="24" class=""></div>
+                    <hr class="w-100 hr-black d-block d-md-none">
+                    <ul class="feature-list d-flex flex-column row-gap-3 d-md-none">
+                        <li class="feature-item"><a href="mailto:office@vital-hotel.at" class="feature-link cta-link">
+                                office@vital-hotel.at
+                            </a></li>
+                        <li class="feature-item"><a href="tel:+43347641500" class="feature-link cta-link">
+                                +43 3476 41 500
+                            </a></li>
+                    </ul>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main class="">
+        <section class="slider-section-full-img"><!-- change 02 :: Two classes added -->
+            <div class="slider-card-section slider-card-section-full-img hero-section-p1">
+                <!-- change 03 :: 01 div :: sliderContainer4 ::  added  -->
+                <div class="slideContainer sliderContainer4">
 
-        <!-- 1st section :: Only one image in a row -->
-        <section class="hero-section-p1">
-            <div class="img-outer-box p1i1">
-                <img src="assets/img/woman-floating-on-water.jpg" alt="" class="darken-img-v1">
-                <div class="img-text container-xl px-5 px-xl-0">
-                    <h3 class="img-subtitle"> Buchen </h3>
-                    <h4 class="img-title"> Bei uns Entspannung pur</h4>
-                    <p class="img-para">Jetzt Buchen</p>
+                    <div class="card-full-screen img-outer-box p1i1">
+                        <img class="darken-img-v1"
+                            src="Public/Images/Zimmer_neu_CopyrightVitalhotel_der_Parktherme_FotoEisenberger.jpg"
+                            width="3168" height="2126" alt="">
+                        <div class="img-text container-bt-lg px-5 px-xl-0">
+                            <h3 class="img-subtitle"> Buchen </h3>
+                            <h4 class="img-title"> Bei uns Entspannung pur</h4>
+                            <p class="img-para"><a href="/" tabindex="-1">Jetzt Buchen</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card-full-screen img-outer-box p1i1">
+                        <img class="darken-img-v1" src="Public/Images/_T4A5871.jpg" width="8192" height="5464" alt="">
+                        <div class="img-text container-bt-lg px-5 px-xl-0">
+                            <h3 class="img-subtitle"> Buchen </h3>
+                            <h4 class="img-title"> Bei uns Entspannung pur</h4>
+                            <p class="img-para"><a href="/" tabindex="-1">Jetzt Buchen</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card-full-screen img-outer-box p1i1"><img class="darken-img-v1"
+                            src="Public/Images/Copyright_Vitalhotel_Hotelansicht_Foto_Eisenberger.jpg" width="6144"
+                            height="2943" alt="">
+                        <div class="img-text container-bt-lg px-5 px-xl-0">
+                            <h3 class="img-subtitle"> Buchen </h3>
+                            <h4 class="img-title"> Bei uns Entspannung pur</h4>
+                            <p class="img-para"><a href="/" tabindex="-1">Jetzt Buchen</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card-full-screen img-outer-box p1i1">
+                        <img class="darken-img-v1"
+                            src="Public/Images/Barbara_Majcan_Vitalhotel_Fruehstueck_13976_Web.jpg" width="1919"
+                            height="1280" alt="">
+                        <div class="img-text container-bt-lg px-5 px-xl-0">
+                            <h3 class="img-subtitle"> Buchen </h3>
+                            <h4 class="img-title"> Bei uns Entspannung pur</h4>
+                            <p class="img-para"><a href="/" tabindex="-1">Jetzt Buchen</a></p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
         </section>
 
-        <!-- 2nd section :: Only 02 image in a row -->
-        <section class="hero-section-p2">
-            <!-- Repeatable 01 :: p2i1 :: div.img-outer-box :: Left side :: 1st image -->
-            <div class="img-outer-box p2i1">
-                <img src="assets/img/woman-wake-up-and-man-opening-window.jpg" alt="" class="darken-img-v1">
-
+        <section class="hero-section-p2 position-relative z-100">
+            <div class="img-outer-box p2i1"><img src="Public/Images/woman-wake-up-and-man-opening-window-img9.jpg"
+                    alt="" class="darken-img-v1">
                 <div class="img-text">
                     <h3 class="img-subtitle"> Hotel </h3>
                     <h4 class="img-title"> Ihr Wellnessurlaub </h4>
-                    <p class="img-para">Mehr Erfahren</p>
+                    <p class="img-para"><a href="/therapie-beauty/kaori-garten/">Mehr Erfahren</a></p>
                 </div>
             </div>
-
-            <!-- Repeatable 02 ::  p2i2 :: div.img-outer-box :: Right side :: 2nd image -->
-            <div class="img-outer-box">
-                <img src="assets/img/five-plate-food-one-tea-and-one-orange-juice.jpg" alt="" class="darken-img-v1">
-
-                <div class="img-text container-xl">
+            <div class="img-outer-box"><img src="Public/Images/five-plate-food-one-tea-and-one-orange-juice.jpg" alt=""
+                    class="darken-img-v1">
+                <div class="img-text container-bt-lg">
                     <h3 class="img-subtitle"> Hotel </h3>
                     <h4 class="img-title"> Ihr Wellnessurlaub </h4>
-                    <p class="img-para">Mehr Erfahren</p>
+                    <p class="img-para"><a href="/bad-radkersburg/region-bad-radkersburg/">Mehr Erfahren</a></p>
                 </div>
             </div>
-
         </section>
 
-        <!-- 3rd section :: Only 03 image in a row -->
         <section class="hero-section-p3">
-
-            <!-- Repeatable 01 :: p3-i1 :: div.img-outer-box :: Left image :: 1st image -->
-            <div class="img-outer-box ">
-                <img src="assets/img/male-female-swiming-pool-looking-at-right-side.jpg" alt="" class="darken-img-v1">
-                <!-- Text box -->
-                <div class="img-text container-xl">
-                    <h3 class="img-subtitle"> Par therm </h3>
+            <div class="img-outer-box "><img
+                    src="Public/Images/male-female-swiming-pool-looking-at-right-side-img13.jpg" alt=""
+                    class="darken-img-v1">
+                <div class="img-text container-bt-lg">
+                    <h3 class="img-subtitle"> Parktherme </h3>
                     <h4 class="img-title"> Parktherme Bad Radkersburg </h4>
-                    <p class="img-para">Mehr Erfahren</p>
+                    <p class="img-para"><a href="/preise/">Mehr erfahren</a></p>
                 </div>
             </div>
-
-            <!-- Repeatable 02 :: p3-i2 :: div.img-outer-box :: Center iMAGE :: 1st image -->
-            <div class="img-outer-box ">
-                <img src="assets/img/woman-floating-on-water.jpg" alt="" class="darken-img-v1">
-
-                <div class="img-text container-xl">
+            <div class="img-outer-box "><img src="Public/Images/Yellow-girl-white-hat-alone-driking-juiice-img18.jpg"
+                    alt="" class="darken-img-v1">
+                <div class="img-text container-bt-lg">
                     <h3 class="img-subtitle"> Preis </h3>
                     <h4 class="img-title"> Urlaubsangebote</h4>
-                    <p class="img-para">Mehr Erfahren</p>
+                    <p class="img-para"><a href="/familie/ferien-im-vitalhotel/">Mehr erfahren</a></p>
                 </div>
             </div>
-
-            <!-- Repeatable 03 :: p3-i3 ::  div.img-outer-box :: rIGHT ImAGE :: 1st image -->
-            <div class="img-outer-box ">
-                <img src="assets/img/family-man-woman-son-daughter-in-swiming-pool-looking-at-right-side.jpg" alt=""
+            <div class="img-outer-box "><img
+                    src="Public/Images/family-man-woman-son-daughter-in-swiming-pool-looking-at-right-side.jpg" alt=""
                     class="darken-img-v1">
-
-                <div class="img-text container-xl">
-                    <h3 class="img-subtitle"> Famili </h3>
+                <div class="img-text container-bt-lg">
+                    <h3 class="img-subtitle"> Familie </h3>
                     <h4 class="img-title"> Eintauchen ins Familienglück! </h4>
-                    <p class="img-para"> Mehr Erfahren </p>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <!-- 4th section:: up-down section -->
-        <section class="section-spacing-start">
-            <div class="container-xl ">
-                <div class="blog-post-s3t1-spacing px-5 px-xl-0">
-                    <!-- text-section -->
-                    <div class="title-subtitle-flex-box text-width-slight-lt-full">
-                        <h3 class="section-intro-subtitle">
-                            E holung und Genuss
-                        </h3>
-                        <p class="section-intro-title-para">
-                            Tauchen Sie ein in Ihren Wohlfühlurlaub in Bad Radkersburg. Ob allein, mit der Familie oder
-                            zu
-                            zweit
-                            – wir bieten das passende Angebot für Ihren perfekten Sommerurlaub.
-                        </p>
-                    </div>
-
-                    <!-- image gallery section -->
-                    <div class="blog-post-image-gallery-section">
-
-                        <div class="cards-arr-up-down-2col">
-                            <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                            <div class="card cards-up-down-placing card-lg-ht">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                            class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                        <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Repeatable 02 :: p1-s4-i2 :: 1st image -->
-                            <div class="card cards-up-down-placing card-lg-ht">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/male-female-swiming-pool-looking-at-right-side.jpg" alt=""
-                                            class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle">Therme </h6>
-                                        <h5 class="card-title">Mit energiereichen Thermalwasser</h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Repeatable 03 :: p1-s4-i3 :: 1st image -->
-                            <div class="card cards-up-down-placing card-lg-ht">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/woman-wake-up-and-man-opening-window.jpg" alt=""
-                                            class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle">To Standard </h6>
-                                        <h5 class="card-title">Verbringen Sie Ihre Zeit im Wohlfühlzimmer</h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Repeatable 04 :: p1-s4-i4 :: 1st image -->
-                            <div class="card cards-up-down-placing card-lg-ht">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/hotel-outdoor.jpg" alt="" class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle"> Philosophi </h6>
-                                        <h5 class="card-title"> Ihr Genießerhotel direkt an der Parktherme</h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="img-para"><a href="/online-anfragen/">Mehr erfahren</a></p>
                 </div>
             </div>
         </section>
-
-        <!-- 5th section:: cards-row-galry-section -->
-        <section class="cards-row-galry-section section-spacing-start">
-            <div class="bg-color-top-div"></div>
-            <div class="bg-color-bottom-div"></div>
-            <div class="container-xl ">
-                <div class="blog-post-s3t1-spacing px-5 px-xl-0">
-                    <!-- text-section -->
-                    <div class="title-subtitle-flex-box text-width-slight-lt-full">
-                        <h3 class="section-intro-subtitle">
-                            Partherm
-                        </h3>
-                        <p class="section-intro-title-para">
-                            Tauchen Sie ein in Ihren Wohlfühlurlaub in Bad Radkersburg. Ob allein, mit der Familie oder
-                            zu
-                            zweit – wir bieten das passende Angebot für Ihren perfekten Sommerurlaub.
-                        </p>
-                    </div>
-
-                    <!-- image gallery section -->
-                    <div class="blog-post-image-gallery-section">
-
-                        <div class="cards-row-galry">
-
-                            <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                            <div class="card card-width-box">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/male-female-left-side-seeing-at-swimming-pool-corner.jpg"
-                                            alt="" class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle">Enspanne </h6>
-                                        <h5 class="card-title"> Parktherme Bad Radkersburg </h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                            <div class="card card-width-box">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/man-diving-into-pool.jpg" alt="" class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle">Enspanne </h6>
-                                        <h5 class="card-title"> Parktherme Bad Radkersburg </h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                            <div class="card card-width-box">
-                                <div class="card-outer-flex-box">
-                                    <!--  -->
-                                    <div class="card-image-area">
-                                        <img src="assets/img/swimimg-small-boys-and girl.jpg" alt="" class="card-img">
-                                    </div>
-                                    <!--  -->
-                                    <div class="card-text-area">
-                                        <h6 class="card-subtitle">Enspanne </h6>
-                                        <h5 class="card-title"> Parktherme Bad Radkersburg </h5>
-                                        <div class="go-to-deatil-icon">
-                                            <a href="#">
-                                                <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32"
-                                                    alt="" class="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6th section :: s4-boxes-section :: 4 image Boxes-->
-        <section class="s4-boxes-section section-spacing">
-            <div class="s4-boxes-flex-box">
-
-                <!-- full section img :: 1st box -->
-                <div class="s4-box half-section-width">
-                    <img src="assets/img/man-woman-cyclle-enjoy.jpg" width="100" height="100" alt=""
-                        class=" img-fit-to-box">
-                </div>
-                <!-- half-section-width :: 50% :: all screen , 100% :: lower than 768px -->
-
-                <!-- cross-message-box :: 2nd box -->
-                <div class="cross-message-box s4-box half-section-width">
-                    <div class="s4-cross-flex-col-box">
-                        <div class="s4-subtitle">
-                            Radfahre
-                        </div>
-                        <div class="s4-title">
-                            Radfahren in der Region Bad Radkersburg - Österreichs sonnigste Radregion!
-                        </div>
-                        <div class="s4-btn-box mt-5">
-                            <button class=""> Radtouren </button>
-                            <button class=""> Leihradpreise Vitalhotel </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- cross-message-box :: 3rd box-->
-                <div class="cross-message-box s4-box half-section-width">
-                    <div class="s4-cross-flex-col-box">
-                        <div class="s4-subtitle">
-                            Gutschei Shop
-                        </div>
-                        <div class="s4-title">
-                            Mit Vitalhotel Gutscheinen liegen Sie immer richtig und verschenken Lebensfreude,
-                            Wohlbeﬁnden und Entspannung!
-                        </div>
-                        <div class="s4-btn-box mt-5">
-                            <button class=""> Radtouren </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3/4th width img :: 4th box -->
-                <div class="s4-ceneter-flex-box s4-box half-section-width py-10 bg-gray">
-                    <img src="assets/img/lben-sfre.png" alt="" class="fit-to-most-of-box">
-                </div>
-
-            </div>
-        </section>
-
-        <!-- slider 01 :: section -->
-        <section class="slider-section blog-post-slider ">
-            <!-- Text section -->
-            <div class="slider-title-section ">
-                <div class="container-xl px-5 px-xl-0">
-                    <div class="sl-intro-text-flexbox">
-
-                        <!-- Title and subtitle -->
-                        <div class="title-subtitle-flex-box">
-                            <h3 class="section-intro-subtitle">
-                                A tuelle
-                            </h3>
-                            <p class="section-intro-title-para">
-                                Wir halten Sie über unsere Themen und Veranstaltungen stets auf dem Laufenden.
-                            </p>
-                        </div>
-
-                        <!-- slider Prev and next btn -->
-                        <div class="sl-btn-flexbox">
-                            <button class="prevButton prevButton1">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                            <button class="nextButton nextButton1">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-section -->
-            <div class="slider-card-section px-5 px-xl-0">
-
-                <div class="slideContainer sliderContainer1 container-xl">
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <!-- You can you h-100 if want every card :: last icon in same line ... -->
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title"> Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area">
-                                <div class="">
-                                    <h6 class="card-subtitle"> Restaurants & Cafe </h6>
-                                    <h5 class="card-title">Regionalen und saisonalen Köstlichkeiten</h5>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Know more... -->
-            <div class="container-xl px-5 px-xl-0 slider-goto-link-box">
-                <a href="#" class="goto-link"> Weiter zu Aktuelles </a>
-            </div>
-
-        </section>
-
-        <!-- slider 02 :: section -->
-        <section class="slider-section package-offers-slider">
-            <!-- Text section -->
-            <div class="slider-title-section ">
-                <div class="container-xl px-5 px-xl-0">
-                    <div class="sl-intro-text-flexbox">
-
-                        <!-- Title and subtitle -->
-                        <div class="title-subtitle-flex-box">
-                            <h3 class="section-intro-subtitle">
-                                Urlaubsangebot
-                            </h3>
-                            <p class="section-intro-title-para">
-                                Entdecken Sie unsere Packages sowie Pauschal- und Urlaubsangebote.
-                            </p>
-                        </div>
-
-                        <!-- slider Prev and next btn -->
-                        <div class="sl-btn-flexbox">
-                            <!-- prevButton2 -->
-                            <button class="prevButton prevButton2">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                            <!-- nextButton2 -->
-                            <button class="nextButton nextButton2">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-section -->
-            <div class="slider-card-section px-5 px-xl-0">
-
-                <!-- sliderContainer2   -->
-                <div class="slideContainer sliderContainer2 container-xl">
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <h5 class="card-title-t2"> Vitales Duett </h5>
-                                    <h6 class="card-subtitle-t2 "> 1 ÜN / 2 Tage inkl. </h6>
-                                </div>
-
-                                <p class="card-para-t2">
-                                    Frühstück, Halbpension,2 x Thermeneintritte in die Parktherme & Saunadorf
-                                </p>
-
-                                <hr class="card-hr">
-
-                                <div class="card-value-box-t2">
-                                    <h5 class="card-value-num card-title-t2"> ab. € 154,00 </h5>
-                                    <span class="card-value-text"> Pauschale Pro Person </span>
-                                </div>
-
-                                <div class="go-to-deatil-icon">
-                                    <a href="#">
-                                        <img src="assets/img/icons/long-arrow-right.svg" width="32" height="32" alt=""
-                                            class="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-            <!-- Know more... -->
-            <div class="container-xl px-5 px-xl-0 slider-goto-link-box">
-                <a href="#" class="goto-link"> Alle Angebote </a>
-            </div>
-
-        </section>
-
-        <!-- slider 03 :: section -->
-        <section class="slider-section social-media-slider">
-            <!-- Text section -->
-            <div class="slider-title-section ">
-                <div class="container-xl px-5 px-xl-0">
-                    <div class="sl-intro-text-flexbox">
-
-                        <!-- Title and subtitle -->
-                        <div class="title-subtitle-flex-box">
-                            <h3 class="section-intro-subtitle">
-                                Socia Media
-                            </h3>
-                            <p class="section-intro-title-para">
-                                Sehen Sie die neusten Social Media Artikel über das Vital Hotel
-                            </p>
-                        </div>
-
-                        <!-- slider Prev and next btn -->
-                        <div class="sl-btn-flexbox">
-                            <!-- prevButton2 -->
-                            <button class="prevButton prevButton3">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                            <!-- nextButton2 -->
-                            <button class="nextButton nextButton3">
-                                <img src="assets/img/icons/right-arrow-with-circle.png" alt="" width="64" height="64"
-                                    class="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- card-section -->
-            <div class="slider-card-section px-5 px-xl-0">
-
-                <!-- sliderContainer2   -->
-                <div class="slideContainer sliderContainer3 container-xl">
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Repeatable 01 :: p1-s4-i1 :: 1st image -->
-                    <div class="card">
-                        <div class="card-outer-flex-box">
-                            <!--  -->
-                            <div class="card-image-area">
-                                <img src="assets/img/card-2-person-eating-on-dining-table-hotel.jpg" alt=""
-                                    class="card-img">
-
-                                <div class="card-img-icon">
-                                    <img src="assets/img/icons/facebook.png" width="24" height="24" alt="" class="">
-                                </div>
-
-                            </div>
-                            <!--  -->
-                            <div class="card-text-area-t2">
-                                <div class="card-heading-t2">
-                                    <span class="card-para-title">
-                                        Lorem ipsum
-                                    </span>
-
-                                    <p class="card-social-para">
-                                        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                        invidunt
-                                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                        accusam
-                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                        sanctus
-                                        est Lorem ipsum dolor sit amet.
-                                    </p>
-
-                                    <div class="goto-social-link-box">
-                                        <a href="#" class="goto-social-link">
-                                            Mehr lesen
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="card-author-container">
-                                    <img src="assets/img/profile-photo/smiling-girl.jpg" width="48" height="48" alt=""
-                                        class="author-photo">
-                                    <div class="card-author-text-box">
-                                        <span class="author-name"> Maria Mustermann </span>
-                                        <span class="social-media-name"> Facebook </span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
-
-            <!-- Know more... -->
-            <div class="container-xl px-5 px-xl-0 slider-goto-link-box">
-                <a href="#" class="goto-link"> Alle Social Media Artikel </a>
-
-                <div class="social-media-row">
-                    <a href="#" class="">
-                        <img src="assets//img/icons/facebook.png" width="32" height="32" class="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets//img/icons/instagram.png" width="32" height="32" class="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets//img/icons/youtube.jpg" width="32" height="32" class="">
-                    </a>
-                    <a href="#" class="">
-                        <img src="assets//img/icons/tiktok.png" width="32" height="32" class="">
-                    </a>
-
-
-
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Form section -->
-        <section class="form-section-bx4 bg-light-green section-spacing-start">
-            <div class="container-xl px-5 px-xl-0">
-                <div class="form-text-section">
-                    <h3 class="form-section-heading">
-                        Anfrage
-                    </h3>
-
-                    <p class="form-section-para">
-                        Schön, dass Sie Ihren Wohlfühlurlaub im **** Vitalhotel der Parktherme verbringen möchten.
-                        Senden Sie uns Ihre unverbindliche Anfrage mit dem untenstehenden Kontaktformular und wir
-                        erstellen Ihnen gerne ein individuelles Angebot.
-                    </p>
-                </div>
-
-                <form class="form">
-                    <div class="form-flex-box">
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Anreise*</label>
-
-                            <div class="form-input-box">
-                                <input type="date" id="datePicker" placeholder="dd.mm.yyyy"
-                                    class="dateInput form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Nächte*</label>
-
-                            <div class="form-input-box">
-                                <input type="number" id="" placeholder="" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Nächte*</label>
-
-                            <div class="form-input-box">
-                                <input type="number" id="" placeholder="" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Nächte*</label>
-
-                            <div class="form-input-box">
-                                <input type="number" id="" placeholder="" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Nächte*</label>
-
-                            <div class="form-input-box">
-                                <input type="number" id="" placeholder="" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="datePicker" class="date-label">Nächte*</label>
-
-                            <div class="form-input-box">
-                                <input type="number" id="" placeholder="" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="mySelect" class="date-label">Nächte*</label>
-                            <div class="form-input-box">
-                                <select class="form-select form-input">
-                                    <option value="1" class="form-option">Bitte wählen</option>
-                                    <option value="1" class="form-option">Option 1</option>
-                                    <option value="1" class="form-option">Option 1</option>
-
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="form-submit-btn-box">
-                                <input type="submit" value="Submit" class="form-submit">
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-
-                <div class="cta-container">
-                    <div class="cta-flex-box">
-                        <span class="cta-subtitle"> Newsletter </span>
-                        <span class="cta-title"> Jetzt abonnieren und kein Angebot verpassen</span>
-
-                        <div class="cta-email-register-box">
-                            <div class="form-input-box">
-                                <input type="email" id="" placeholder="eMail id" class="form-input">
-                                <!-- <p class="date-value">Selected Date: <span id="selectedDate">None</span></p> -->
-                            </div>
-                            <div class="form-group-nl">
-                                <div class="form-submit-btn-box">
-                                    <input type="submit" value="Anmelden" class="form-submit">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <footer class="section-spacing-footer">
-            <div class="container-xl px-5 px-xl-0">
-                <div class="ft-flex-box pt-20 pb-10">
-                    <div class="ft-group">
-
-                        <div class="ft-group-title">
-                            Service & info
-                        </div>
-
-                        <ul class="ft-ul">
-                            <li class="ft-item">
-                                <a href="#" class="ft-link">
-                                    Anfahrt
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Datenschutz
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    AGB
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Impressum
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Kontakt
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="ft-group">
-                        <div class="ft-group-title">
-                            Zahlungsmetoden
-                        </div>
-
-
-                        <ul class="ft-ul ft-logo-list">
-
-                            <li class="ft-item">
-
-                                <img src="/assets/img/icons/visa-logo.jpg" alt="" width="64" height="36">
-                            </li>
-
-                            <li class="ft-item">
-                                <img src="/assets/img/icons/paypal-logo.jpg" alt="" width="64" height="36">
-                            </li>
-                            <li class="ft-item">
-                                <img src="/assets/img/icons/Klarna-Payment.svg" alt="" width="64" height="36">
-                            </li>
-                            <li class="ft-item ft-item-img">
-                                <img src="/assets/img/icons/visa-text-logo.jpg" alt="" width="64" height="36" class="">
-                            </li>
-
-                        </ul>
-
-                    </div>
-                    <div class="ft-group">
-                        <div class="ft-group-title">
-                            Überblick
-                        </div>
-
-
-                        <ul class="ft-ul">
-                            <li class="ft-item">
-                                <a href="#" class="ft-link">
-                                    Kulinarik
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Preise
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Parktherme
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Wohnen
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Busgruppen
-                                </a>
-                            </li>
-                            <li class="ft-item">
-                                <a href="" class="ft-link">
-                                    Seminare
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="ft-group ft-contact-group">
-                        <div class="ft-group-title">
-                            Kontakt
-                        </div>
-
-
-                        <ul class="ft-ul">
-                            <div class="ft-item ft-address">
-                                Thermenstraße 21, 8490 Bad Radkersburg
-                            </div>
-
-                            <li class="ft-item">
-                                <span class=""> Tel. : </span>
-                                <a href="tel: +43 3476 41 500" class="ft-contact-link">
-                                    +43 3476 41 500
-                                </a>
-                            </li>
-
-                            <li class="ft-item">
-                                <span class=""> Fax : </span>
-                                <a href="tel:+43 3476 41 500 – 807" class="ft-contact-link">
-                                    +43 3476 41 500 – 807
-                                </a>
-                            </li>
-
-                            <li class="ft-item">
-                                <span class=""> E-Mail : </span>
-                                <a href="mailto: iampritesh13@gmail.com" class="ft-contact-link">
-                                    ofﬁce@vital-hotel.at
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="gray-line">
-        </footer>
     </main>
+
+
+    <script src="Public/Libraries/JQuery/js/jquery-3.3.1.min.js"></script>
+    <script src="Public/Libraries/Popper/js/popper.min.js"></script>
+    <script src="Public/Libraries/Bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="Public/Libraries/Slick/js/slick.js"></script>
+
+    <script src="Public/Javascript/Main.js"></script>
+    <script src="Public/Javascript/custom.js"></script>
+
 </body>
-
-
-<!-- Open and close Menu... -->
-<script>
-    /*=============== SHOW MENU ===============*/
-    function mobileMenuToggle(event) {
-        const mobileMenu = document.querySelector('.nav-menubar-outer-box');
-        const mobileMenuOpenIcon = document.querySelector('.nav-open-icon');
-        const mobileMenuCloseIcon = document.querySelector('.nav-close-icon');
-        if (mobileMenu) {
-            mobileMenu.classList.toggle('show');
-            mobileMenuCloseIcon.classList.toggle('show');
-            mobileMenuOpenIcon.classList.toggle('show');
-        }
-    }
-    /*=============== SHOW MENU ===============*/
-
-
-</script>
-<script>
-    document.getElementByClassName('dateInput').addEventListener('input', function (e) {
-        var input = e.target.value;
-        if (!/^\d{2}\.\d{2}\.\d{4}$/.test(input)) {
-            e.target.setCustomValidity('Please enter the date in the format: dd.mm.yyyy');
-        } else {
-            e.target.setCustomValidity('');
-        }
-    });
-</script>
-
-
-<!-- Slider  -->
-<script>
-
-
-    class ResponsiveSlider {
-        constructor(sliderContainerSelector, cardSelector, prevButtonSelector, nextButtonSelector) {
-            this.slideContainer = document.querySelector(sliderContainerSelector);
-            this.slides = document.querySelectorAll(`${sliderContainerSelector} > ${cardSelector}`);
-            this.prevButton = document.querySelector(prevButtonSelector);
-            this.nextButton = document.querySelector(nextButtonSelector);
-            this.ActiveSlideNum = 0;
-            this.totalSlides = this.slides.length;
-
-            this.init();
-        }
-
-
-        updateTransform() {
-            this.slideContainer.style.transition = 'transform 0.5s ease';
-
-            if (window.matchMedia("(max-width: 992px)").matches) {
-                this.slideContainer.style.transform = `translateX(calc((-48% - 20px) * ${this.ActiveSlideNum}))`;
-            } else if (window.matchMedia("(max-width: 576px)").matches) {
-                this.slideContainer.style.transform = `translateX(calc((-100% - 20px) * ${this.ActiveSlideNum}))`;
-            } else if (window.matchMedia("(min-width: 992px)").matches) {
-                this.slideContainer.style.transform = `translateX(calc((-33.33% - 14px) * ${this.ActiveSlideNum}))`;
-            }
-        }
-
-
-        init() {
-            this.prevButton.addEventListener('click', () => {
-                if (this.ActiveSlideNum > 0) {
-                    this.ActiveSlideNum--;
-                } else {
-                    this.ActiveSlideNum = this.totalSlides - 1;
-                }
-                this.updateTransform();
-                console.log('ActiveSlideNum is decreased to = ', this.ActiveSlideNum);
-            });
-
-            this.nextButton.addEventListener('click', () => {
-                if (this.ActiveSlideNum < (this.totalSlides - 1)) {
-                    this.ActiveSlideNum++;
-                } else {
-                    setTimeout(() => {
-                        this.slideContainer.style.transition = 'none';
-                        this.ActiveSlideNum = 0;
-                        this.updateTransform();
-
-                        setTimeout(() => {
-                            this.slideContainer.style.transition = 'transform 0.5s ease';
-                        }, 0);
-                    }, 500);
-                }
-                this.updateTransform();
-                console.log('ActiveSlideNum is increased to = ', this.ActiveSlideNum);
-            });
-
-            this.updateTransform(); // Initial transform application
-        }
-    }
-
-
-    // Initialize three sliders
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider1 = new ResponsiveSlider('.sliderContainer1', '.card', '.prevButton1', '.nextButton1');
-        const slider2 = new ResponsiveSlider('.sliderContainer2', '.card', '.prevButton2', '.nextButton2');
-        const slider3 = new ResponsiveSlider('.sliderContainer3', '.card', '.prevButton3', '.nextButton3');
-    });
-</script>
-
-
 
 </html>

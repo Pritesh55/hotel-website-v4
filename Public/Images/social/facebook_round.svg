@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 10.6666667 0 10.6666667 20 0 20"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-Vitalhotel-content-Highlights-1" transform="translate(-1129.000000, -4096.000000)">
+            <g id="Group-15-Copy" transform="translate(0.000000, 3820.000000)">
+                <g id="Group-37" transform="translate(1130.000000, 216.000000)">
+                    <g id="Group-36" transform="translate(0.000000, 61.000000)">
+                        <g id="Page-1" transform="translate(21.000000, 16.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M6.92352495,20 L6.92352495,10.877114 L10.0684638,10.877114 L10.5393027,7.32169968 L6.92352495,7.32169968 L6.92352495,5.05172475 C6.92352495,4.02234933 7.21705136,3.32079935 8.73309084,3.32079935 L10.6666667,3.32000494 L10.6666667,0.1400805 C10.3321662,0.0968294319 9.18443984,0 7.84915752,0 C5.06147239,0 3.15291611,1.65686898 3.15291611,4.69971401 L3.15291611,7.32169968 L0,7.32169968 L0,10.877114 L3.15291611,10.877114 L3.15291611,20 L6.92352495,20 Z" id="Fill-1" fill="#2F94CB" mask="url(#mask-2)"></path>
+                        </g>
+                        <circle id="Oval-3-Copy-2" stroke="#2F94CB" cx="26" cy="26" r="26"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

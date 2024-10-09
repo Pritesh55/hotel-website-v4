@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="99px" height="100px" viewBox="0 0 99 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-13.2%" y="-13.0%" width="126.4%" height="126.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0 91 0 91 92 0 92"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Vitalhotel-Startseite" transform="translate(-619.000000, -1819.000000)">
+            <g id="Group-3" filter="url(#filter-1)" transform="translate(623.000000, 1821.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M69.1038833,47.2665333 L35.7372167,70.2665333 C35.4809,70.4428667 35.1806,70.5333333 34.8833333,70.5333333 C34.63915,70.5333333 34.3964833,70.4750667 34.17505,70.3554667 C33.6775833,70.0902 33.3666667,69.5688667 33.3666667,69 L33.3666667,23 C33.3666667,22.4311333 33.6775833,21.9098 34.17505,21.6445333 C34.671,21.3777333 35.2716,21.4145333 35.7372167,21.7334667 L69.1054,44.7334667 C69.5164167,45.0186667 69.7666667,45.4924667 69.7666667,46 C69.7666667,46.5075333 69.5164167,46.9813333 69.1038833,47.2665333 M45.5,0 C20.4113,0 0,20.6356 0,46 C0,71.3644 20.4113,92 45.5,92 C70.5887,92 91,71.3644 91,46 C91,20.6356 70.5887,0 45.5,0" id="Fill-1" fill="#2F94CB" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

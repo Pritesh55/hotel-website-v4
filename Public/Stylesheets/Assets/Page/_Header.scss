@@ -1,0 +1,246 @@
+$headerHeight: 80px;
+
+header {
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+
+  .rightcontent {
+    display: flex;
+
+    .mobileshortcuts {
+      display: flex;
+      align-items: center;
+      color: $decoColor;
+      font-size: 20px;
+
+      .item {
+        border-right: 1px solid $decoColor;
+        padding: 0 15px;
+
+        &:last-child {
+          border: 0;
+        }
+
+        .NavIcons {
+          a {
+            margin-right: 15px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      i {
+        font-size: inherit;
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding: 0;
+    padding-left: 15px;
+
+    .Logo {
+      max-width: 60px;
+    }
+  }
+
+  .headertop {
+    color: #fff;
+    background: $decoColor;
+    font-size: $fontSize - 2;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    @media screen and (max-width: $xl-min-screen - 1 + 200) {
+      font-size: $fontSize - 4;
+    }
+    @media screen and (max-width: $lg-min-screen - 1) {
+      text-align: center;
+    }
+    @media screen and (max-width: $md-min-screen - 1) {
+      position: static;
+    }
+
+    & > .row {
+      @media screen and (max-width: $md-min-screen - 1) {
+        display: none;
+      }
+
+      & > .col {
+        margin: 0;
+        @media screen and (max-width: $lg-min-screen - 1) {
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        color: $decoColor2;
+      }
+    }
+
+    .headerNav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        margin-right: -4px;
+        position: relative;
+        //padding: 0 2.55%;
+        padding: 0 3.8%;
+        @media screen and (max-width: $lg-min-screen - 1 + 200) {
+          padding: 0 2%;
+        }
+
+        &:after {
+          content: " ";
+          width: 1px;
+          height: 50%;
+          background: lighten($decoColor, 10%);
+          position: absolute;
+          right: 0;
+          top: 25%;
+        }
+
+        @media screen and (max-width: $lg-min-screen - 1) {
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+
+        a {
+          padding: 10px 0 10px 0;
+          display: block;
+        }
+      }
+    }
+
+    .shortcuts {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+      @media screen and (max-width: $lg-min-screen - 1) {
+        justify-content: center;
+      }
+
+      .item {
+        // display: inline-block;
+        // margin-right: -4px;
+        position: relative;
+        padding: 0 3.8%;
+        @media screen and (max-width: $lg-min-screen - 1 + 200) {
+          padding: 0 2%;
+        }
+
+        &:after {
+          content: " ";
+          width: 1px;
+          height: 50%;
+          background: lighten($decoColor, 10%);
+          position: absolute;
+          left: 0;
+          top: 25%;
+        }
+
+        @media screen and (max-width: $lg-min-screen - 1) {
+          &:first-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+
+        &.navic {
+          padding: 0 calc(3.8% - 10px);
+          @media screen and (max-width: $lg-min-screen - 1 + 200) {
+            padding: 0 calc(2% - 10px);
+          }
+        }
+
+        & > *:not(.frame) {
+          padding: 10px 0 10px 0;
+        }
+
+        & > .frame {
+          padding: 0;
+        }
+      }
+
+      .NavIcons {
+        a {
+          padding: 10px;
+          display: inline-block;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .mainmenuwrap {
+    position: relative;
+  }
+
+  .frame {
+    padding: 0;
+    width: auto;
+  }
+
+  .headercontent {
+    width: 100%;
+
+    @media screen and (max-width: $md-min-screen - 1) {
+      & > .container {
+        padding: 0;
+        max-width: none;
+      }
+    }
+
+    .logo {
+      text-align: center;
+      margin: 30px auto 5px;
+    }
+
+    .frame {
+      max-width: 100%;
+    }
+  }
+}
+
+.headerbottom {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-bottom: 10px solid $decoColor;
+  @media screen and (min-width: $md-min-screen) {
+    width: 90%;
+    max-width: calc(100% - 80px);
+  }
+
+  .frame {
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.test {
+  color: #000;
+}

@@ -1,0 +1,40 @@
+.SimpleMasonry{
+    .masonry-grid{
+        margin: -10px;
+
+        .masonry-grid-item,
+        .masonry-grid-sizer{
+            padding: 10px;
+            float: left;
+
+            &.masonry-grid-item-width2{
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    width: 50%;
+                }
+            }
+            &.masonry-grid-item-width3{
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    width: 50%;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 33.33333%;
+                }
+            }
+            &.masonry-grid-item-width4{
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    width: 50%;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 25%;
+                }
+            }
+
+            .grid-image{
+                min-width: 100%;
+            }
+        }
+    }
+}

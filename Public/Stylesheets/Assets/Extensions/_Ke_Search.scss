@@ -1,0 +1,285 @@
+$searchcolor: $textColor;
+$searchfontsize: 25px;
+$searchletterspacing: -0.44px;
+$searchfontsizemobile: 20px;
+
+.searchbutton{
+	cursor: pointer;
+	transition: all 0.3s;
+
+	&:hover,
+	&:focus{
+		color: $decoColor2;
+    }
+    
+    i{
+        font-size: $fontSize - 4;
+    }
+}
+
+#search-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    height: calc(100% + 4px);
+    z-index: 2000; 
+    display: none;
+    color: $searchcolor;
+    border-bottom: 4px solid $decoColor;
+    padding: 0 10%;
+    background: #fff;
+    @media screen and (max-width:767px){
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 0 20px;
+        border:0;
+        color: #fff;
+    }
+
+    &.open{
+        display: initial;
+    }
+
+    .close-search{
+        position: absolute;
+        outline: 0;
+        top: 0;
+        bottom:0;
+        margin:auto;
+        right: 0;
+        display: block;
+        width: 35px;
+        height: 35px;
+        color: inherit;
+        text-indent: -999999px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        @media screen and (max-width:767px){
+            width: 30px;
+            height: 30px;
+            margin:0;
+            top: 20px;
+        }
+
+        &:after{
+            content: "\f00d";
+            font-family: Font Awesome\ 5 Pro;
+            color: inherit;
+            text-indent: 0;
+            font-size: $fontSize;
+            @media screen and (max-width:767px){
+                font-size: 20px;
+            }
+        }
+    }
+
+    form{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @media screen and (max-width:767px){
+            display: flex;
+            align-items: center;
+        }
+
+        #ke_search_searchfield_submit{
+            position: absolute;
+            outline: 0;
+            top: 0;
+            bottom:0;
+            margin:auto;
+            right: 42px;
+            display: block;
+            width: 35px;
+            height: 35px;
+            color: inherit;
+            text-indent: -999999px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            @media screen and (max-width:767px){
+                width: 30px;
+                height: 30px;
+                margin:0;
+                top: 20px;
+            }
+
+            &:after{
+                content: "\f00c";
+                font-family: Font Awesome\ 5 Pro;
+                color: inherit;
+                text-indent: 0;
+                font-size: $fontSize;
+                @media screen and (max-width:767px){
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        #ke_search_searchfield_sword{
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border: none;
+            outline: 0;
+            font-family: $fontFamily;
+            font-size: $searchfontsize;
+            color: $searchcolor;
+            letter-spacing: $searchletterspacing;
+            padding-right: 75px;
+            line-height: 30px;
+            @media screen and (max-width:767px){
+                background: none;
+                color: #fff;
+                height: 40px;
+                border-bottom: 1px solid #fff;
+                padding-right: 35px;
+            }
+            @media(max-width: 500px){
+                font-size: $searchfontsizemobile;
+            }
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-family: $fontFamily;
+                font-size: $searchfontsize;
+                color: $searchcolor;
+                opacity: 0.8;
+                letter-spacing: $searchletterspacing;
+                @media screen and (max-width:767px){
+                    color: #fff;
+                }
+                @media(max-width: 500px){
+                    font-size: $searchfontsizemobile;
+                }
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                font-family: $fontFamily;
+                font-size: $searchfontsize;
+                color: $searchcolor;
+                opacity: 0.8;
+                letter-spacing: $searchletterspacing;
+                @media screen and (max-width:767px){
+                    color: #fff;
+                }
+                @media(max-width: 500px){
+                    font-size: $searchfontsizemobile;
+                }
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                font-family: $fontFamily;
+                font-size: $searchfontsize;
+                color: $searchcolor;
+                opacity: 0.8;
+                letter-spacing: $searchletterspacing;
+                @media screen and (max-width:767px){
+                    color: #fff;
+                }
+                @media(max-width: 500px){
+                    font-size: $searchfontsizemobile;
+                }
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                font-family: $fontFamily;
+                font-size: $searchfontsize;
+                color: $searchcolor;
+                opacity: 0.8;
+                letter-spacing: $searchletterspacing;
+                @media screen and (max-width:767px){
+                    color: #fff;
+                }
+                @media(max-width: 500px){
+                    font-size: $searchfontsizemobile;
+                }
+            }
+        }
+    }
+}
+
+.frame .tx-kesearch-pi1{
+    form{
+        margin: 0;
+
+        .kesearch_searchbox{
+            .kesearchbox{
+                height: 60px;
+
+                #ke_search_sword{
+                    background: none;
+                    font-family: $fontFamily;
+                    font-size: 26px;
+                    color: #000;;
+                    letter-spacing: 0;
+                }
+
+                #kesearch_submit{
+                    display: none;
+                }
+            }
+
+            .resetbutt{
+                .resetButton{
+                    border: 1px solid $decoColor;
+                    background: none;
+                    line-height: 20px;
+                    max-width: none;
+                }
+            }
+
+            .submitbutt{
+                input{
+                    border: 1px solid $decoColor;
+                    background: none;
+                    line-height: 20px;
+                }
+            }
+
+            a.kesGreyButt, 
+            span.resetbutt a, 
+            span.submitbutt input, 
+            input.kesGreyButt, 
+            span.kesGreyButt,
+            .kesearchbox #ke_search_sword{
+                transition: all 0.3s;
+            }
+
+            span.resetbutt a, 
+            span.submitbutt input, 
+            input.kesGreyButt, 
+            span.kesGreyButt,
+            .kesearchbox #ke_search_sword{
+                &:hover,
+                &:focus{
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+
+    #kesearch_num_results{
+        margin-bottom: $boxContentVerticalPaddingVerySmall - 5px;
+    }
+
+    #kesearch_results{
+
+        .result-list-item{
+            .hit{
+                color: $decoColor;
+            }
+        }
+    }  
+}
+

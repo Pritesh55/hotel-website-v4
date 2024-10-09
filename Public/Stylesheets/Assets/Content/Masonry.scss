@@ -1,0 +1,317 @@
+$masonryItemPadding: 10px;
+$masonryXSItemWidth: 100%;
+$masonrySMItemWidth: 100%;
+$masonryMDItemWidth: 50%;
+$masonryLGItemWidth: 25%;
+$masonryXLItemWidth: 25%;
+$masonryItemHeight: 280px;
+$masonryItemOpacity: 0.8;
+$masonryItemHoverOpacity: 1;
+
+.Masonry{
+    .masonry-grid{
+        margin: -$masonryItemPadding;
+
+        .masonry-grid-sizer{
+            width: $masonryXSItemWidth;
+            @media screen and (min-width: $sm-min-screen){
+                width: $masonrySMItemWidth;
+            }
+            @media screen and (min-width: $md-min-screen){
+                width: $masonryMDItemWidth;
+            }
+            @media screen and (min-width: $lg-min-screen){
+                width: $masonryLGItemWidth;
+            }
+            @media screen and (min-width: $xl-min-screen){
+                width: $masonryXLItemWidth;
+            }
+        }
+
+        .masonry-grid-item {
+            float: left;
+            width: $masonryXSItemWidth;
+            height: $masonryItemHeight;
+            padding: $masonryItemPadding;
+            max-width: 100%;
+            @media screen and (min-width: $sm-min-screen){
+                width: $masonrySMItemWidth;
+            }
+            @media screen and (min-width: $md-min-screen){
+                width: $masonryMDItemWidth;
+            }
+            @media screen and (min-width: $lg-min-screen){
+                width: $masonryLGItemWidth;
+            }
+            @media screen and (min-width: $xl-min-screen){
+                width: $masonryXLItemWidth;
+            }
+
+            a{
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s;
+                display: block;
+
+                &:hover{
+                    .item{
+                        .overlay{
+                            opacity: 0.6;
+                            background: rgba($decoColor2, 0.9);
+
+                            &.hastext{
+                                opacity: 1;
+                            }
+
+                            &.hasvideo{
+                                opacity: 1;
+                                background: none;
+                                color: $decoColor2;
+                            }
+                        }
+                    }
+
+                    .description:after{
+                        background: $decoColor2;
+                    }
+                }
+            }
+
+            .item{
+                position: relative;
+                height: 100%;
+                width: 100%;
+
+                -ms--display: flex;
+                -moz-display: flex;
+                -webkit-display: flex;
+                display: flex;
+
+                -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+                -webkit-jflex-direction: column;
+                flex-direction: column;
+
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: rgba($decoColor, 0.9);
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                    opacity: 0;
+                    transition: all 0.3s;
+
+                    &.hasvideo{
+                        background: none;
+                        opacity: 1;
+                        color: $decoColor;
+                        font-size: 90px;
+
+                        i{
+                            font-size: inherit;
+                            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+
+                    &.hastext{
+                        opacity: 1;
+                        font-family: $fontFamily2;
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: 1.25px;
+
+                        .inner{
+                            max-width: 280px;
+
+                            .lead{
+                                small{
+                                    font-size: 35px;
+                                    font-weight: 700;
+                                    letter-spacing: 1.01px;
+
+                                    b,
+                                    strong{
+                                        font-weight: 900;
+                                    }
+                                }
+                            }
+
+                            pre{
+                                transition: all 0.3s;
+                                letter-spacing: 1px;
+                                font-style: italic;
+                                color: inherit;
+                                font-family: inherit;
+                                font-weight: inherit;
+                                position: relative;
+                                overflow: visible;
+                                display: table !important;
+                                width: auto;
+
+                                &.text-center{
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                                &:before,
+                                &:after{
+                                    content: " ";
+                                    width:11px;
+                                    height: 1px;
+                                    background: #fff;
+                                    position: absolute;
+                                    top: 50%;
+                                    transition: all 0.3s;
+                                }
+
+                                &:before{
+                                    right: 100%;
+                                    margin-right: 10px;
+                                }
+
+                                &:after{
+                                    left: 100%;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .lead{
+                                font-size: 45px;
+                                letter-spacing: 1.01px;
+                                font-weight: bold;
+                                line-height: 40 / 45; //lineheight - fontsize
+                                margin: 10px auto;
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+                }
+
+                .content{
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+
+                    &.hasdescription{
+                        max-height: calc(100% - 40px);
+                    }
+
+                    .image{
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        text-align: center;
+                        opacity: 1;
+                        transition: all 0.3s;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                }
+
+                .description{
+                    font-size: $fontSize - 1;
+                    letter-spacing: -0.47px;
+                    font-weight: 700;
+                    text-align: center;
+                    position: relative;
+                    padding: 8px 0;
+
+                    &:after{
+                        content: " ";
+                        position: absolute;
+                        width: 20px;
+                        height: 1px;
+                        background: $decoColor;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            &.masonry-grid-item-width1{
+                width: $masonryXSItemWidth;
+                @media screen and (min-width: $sm-min-screen){
+                    width: $masonrySMItemWidth;
+                }
+                @media screen and (min-width: $md-min-screen){
+                    width: $masonryMDItemWidth;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 1*$masonryLGItemWidth;
+                }
+                @media screen and (min-width: $xl-min-screen){
+                    width: 1*$masonryXLItemWidth;
+                }
+            }
+            &.masonry-grid-item-width2{
+                width: $masonryXSItemWidth;
+                @media screen and (min-width: $sm-min-screen){
+                    width: $masonrySMItemWidth;
+                }
+                @media screen and (min-width: $md-min-screen){
+                    width: $masonryMDItemWidth;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 2*$masonryLGItemWidth;
+                }
+                @media screen and (min-width: $xl-min-screen){
+                    width: 2*$masonryXLItemWidth;
+                }
+            }
+            &.masonry-grid-item-width3{
+                width: $masonryXSItemWidth;
+                @media screen and (min-width: $sm-min-screen){
+                    width: $masonrySMItemWidth;
+                }
+                @media screen and (min-width: $md-min-screen){
+                    width: $masonryMDItemWidth;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 3*$masonryLGItemWidth;
+                }
+                @media screen and (min-width: $xl-min-screen){
+                    width: 3*$masonryXLItemWidth;
+                }
+            }
+            &.masonry-grid-item-width4{
+                width: $masonryXSItemWidth;
+                @media screen and (min-width: $sm-min-screen){
+                    width: $masonrySMItemWidth;
+                }
+                @media screen and (min-width: $md-min-screen){
+                    width: $masonryMDItemWidth;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    width: 4*$masonryLGItemWidth;
+                }
+                @media screen and (min-width: $xl-min-screen){
+                    width: 4*$masonryXLItemWidth;
+                }
+            }
+
+            &.masonry-grid-item-height1{
+                height: $masonryItemHeight;
+            }
+            &.masonry-grid-item-height2{
+                height: 2*$masonryItemHeight;
+            }
+            &.masonry-grid-item-height3{
+                height: 3*$masonryItemHeight;
+            }
+            &.masonry-grid-item-height4{
+                height: 4*$masonryItemHeight;
+            }
+        }
+    }
+}

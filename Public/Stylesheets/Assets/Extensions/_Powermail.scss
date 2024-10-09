@@ -1,0 +1,420 @@
+.tx-powermail {
+    letter-spacing: 0.5px;
+    font-size: $fontSize - 2;
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    .powermail_fieldset {
+        border: 0;
+
+        &.fourcolumns{
+            @media screen and (min-width: $md-min-screen){
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+
+            .powermail_fieldwrap {
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+
+                .simpleselect{
+                    max-width: none;
+                }
+            }
+        }
+
+        &.threecolumns{
+            @media screen and (min-width: $md-min-screen){
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+
+            .powermail_fieldwrap {
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+
+                    @media screen and (max-width: $lg-min-screen - 1){
+                        &:nth-child(3n){
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    flex: 0 0 33.33333%;
+                    max-width: 33.33333%;
+                }
+
+                .simpleselect{
+                    max-width: none;
+                }
+            }
+        }
+
+        &.twocolumns{
+            @media screen and (min-width: $md-min-screen){
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+
+            .powermail_fieldwrap {
+                width: 100%;
+                @media screen and (min-width: $md-min-screen){
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                .simpleselect{
+                    max-width: none;
+                }
+            }
+        }
+
+        &.fullwidth{
+            .powermail_fieldwrap {
+                width: 100%;
+
+                .simpleselect{
+                    max-width: none;
+                }
+            }
+        }
+
+        &.autowidth{
+            .powermail_fieldwrap {
+                @media screen and (min-width: $md-min-screen){
+                    display: inline-block;
+                }
+            }
+        }
+
+        .powermail_fieldwrap{
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            @media screen and (min-width: $md-min-screen){
+                &.smallwidth{
+                    flex: 17%;
+                    max-width: 17%;
+                }
+            }
+
+            .powermail_field {
+                width: 100%;
+            }
+        }
+    }
+
+    label{
+        margin-bottom: 15px;
+        margin-top: 0;
+
+        .mandatory{
+            color: $decoColor;
+        }
+    }
+
+    .simpleselect{
+        box-sizing: border-box;
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .placeholder,
+        .options .option,
+        .options .optgroup .optgroup-label{
+            line-height: 19px;
+        }
+
+        .placeholder,
+        .options{
+            width: 100%;
+            height: 40px;
+            border: solid 1px #EAECEF;
+            border-radius: 0;
+
+            &.active {
+                border: solid 1px $decoColor2;
+            }
+        }
+    }
+
+    .powermailplaceholder{
+        height: 45px;
+        @media screen and (min-width: $md-min-screen){
+            height: 90px;
+        }
+    }
+
+    .powermailsmallplaceholder{
+        height: 20px;
+        @media screen and (min-width: $md-min-screen){
+            height: 40px;
+        }
+    }
+
+    .powermail_input,
+    .powermail_textarea,
+    .powermail_date,
+    .powermail_select{
+        margin: 0;
+        border: solid 1px #EAECEF;
+        border-radius: 0;
+        outline: 0;
+        color: $textColor;
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.3s;
+
+        &.filled,
+        &:hover,
+        &:focus {
+            border: solid 1px $decoColor2;
+        }
+    }
+
+
+	.powermail_input,
+	.powermail_textarea {
+		&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			color: #B5B5B5;
+            font-weight: 700;
+            font-size: $fontSize - 2;
+            letter-spacing: 0.5px;
+		}
+		&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color: #B5B5B5;
+			font-weight: 700;
+            opacity:  1;
+            font-size: $fontSize - 2;
+            letter-spacing: 0.5px;
+		}
+		&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color: #B5B5B5;
+			font-weight: 700;
+            opacity:  1;
+            font-size: $fontSize - 2;
+            letter-spacing: 0.5px;
+		}
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: #B5B5B5;
+			font-weight: 700;
+            font-size: $fontSize - 2;
+            letter-spacing: 0.5px;
+		}
+    }
+
+    .powermail_textarea {
+        height: 300px;
+        padding-top: 13px;
+	}
+
+	.powermail_fieldwrap_type_text{
+		margin-bottom: 50px;
+		@media screen and (max-width:992px){
+			margin-top: 50px;
+		}
+	}
+
+	input[type=number]::-webkit-outer-spin-button,
+	input[type=number]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+	input[type=number] {
+		-moz-appearance:textfield;
+    }
+
+    .powermail_fieldwrap_type_submit {
+        margin-top: 20px;
+        @media screen and (min-width: $md-min-screen){
+            margin-top: 40px;
+        }
+    }
+
+    .powermail_submit {
+        color: $decoColor;
+		background: none;
+		border-radius: 0;
+        padding: 0 15px;
+        min-width: 123px;
+        height: 40px;
+        border: 1px solid #E6E6E6;
+        margin: 0 auto;
+        outline: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: bold;
+
+        &:hover,
+        &:focus{
+            background: $decoColor2;
+            color: #fff;
+        }
+	}
+
+	.checkbox input[type="checkbox"],
+	.checkbox-inline input[type="checkbox"],
+	.radio input[type="radio"],
+	.radio-inline input[type="radio"]{
+		margin-top: 4px;
+    }
+
+    .powermail_fieldwrap_type_check {
+        @media screen and (min-width: $md-min-screen){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &> label{
+            font-weight: bold;
+            font-size: $fontSize - 1;
+            letter-spacing: -0.47px;
+
+            @media screen and (min-width: $md-min-screen){
+                flex: 25%;
+                max-width: 25%;
+            }
+        }
+
+        .powermail_field{
+            @media screen and (min-width: $md-min-screen){
+                flex: 75%;
+                max-width: 75%;
+            }
+
+            .checkbox{
+                position: relative;
+                padding-left: 30px;
+
+                label{
+                    max-width: 688px;
+
+                    .powermail_checkbox {
+                        position: absolute;
+                        left: 0;
+                        margin-top: 5px;
+                    }
+
+                    a{
+                        font-style: italic;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.topfooter{
+    .tx-powermail{
+
+        .powermail_fieldset{
+            align-items: flex-end;
+
+            .powermail_fieldwrap {
+                &:nth-child(3n){
+                    flex: 0 0 170px;
+                    max-width: 170px;
+                }
+                @media screen and (min-width: $md-min-screen){
+                    @media screen and (max-width: $lg-min-screen - 1){
+                        &:nth-child(3n - 2){
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    &:nth-child(3n - 1){
+                        padding-right:0;
+                        margin-right: -5px;
+                        flex: 0 0 calc(100% - 170px);
+                        max-width: calc(100% - 170px);
+                    }
+                    &:nth-child(3n){
+                        padding-left:0;
+                    }
+                }
+                @media screen and (min-width: $lg-min-screen){
+                    &:nth-child(3n - 1){
+                        flex: 0 0 calc(66.66666% - 170px);
+                        max-width: calc(66.66666% - 170px);
+                    }
+                }
+
+                &.powermail_fieldwrap_type_html {
+                    font-style: italic;
+                    letter-spacing: 0;
+
+                    h1, h2, h3, h4, h5, h6{
+                        color: inherit;
+                        font-family: $fontFamily2;
+                        margin: 0 0 5px;
+                        font-style: normal;
+                    }
+
+                    h2{
+                        font-size: $h2FontSize - 5;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                &.powermail_fieldwrap_type_input {
+                    .powermail_input {
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        @media screen and (max-width: $md-min-screen - 1){
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                }
+
+                &.powermail_fieldwrap_type_submit{
+                    margin:0;
+
+                    .powermail_submit{
+                        color: #fff;
+                        background: $decoColor2;
+                        border-radius: 5px;
+                        padding: 0 15px;
+                        min-width: 0;
+                        border: none;
+                        border: 1px solid $decoColor2;
+                        width: 100%;
+                        letter-spacing: 0.5px;
+
+                        &:hover,
+                        &:focus{
+                            background: $decoColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

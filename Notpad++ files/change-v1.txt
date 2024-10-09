@@ -1,0 +1,92 @@
+
+1 container
+container-xl => container-bt-lg
+container-bt-lg px-5 => container-bt-lg px-5 px-xl-0 (22 times)
+
+
+blog-post-s3t1-spacing  => px-5 removed and moved to 
+						   become container-bt-lg px-5 px-xl-0
+						   
+blog-post-s3t1-spacing  => px-5 removed and moved to 
+						   become container-bt-lg px-5 px-xl-0
+						   
+slider-card-section px-5 => px-xl-0 added (3 timnes for 03 sliders);
+
+
+07:30 :: image:hover => 1) box-shadow
+16:41 :: Whole div.card :hover => 1)box-shadow, 2)undeline, 3)arrow move thavo joie...
+
+---------------------------------------------------------------------------------------
+ 
+---------------
+custom.css :: 
+---------------
+	--height-of-cards-lg-ht: 620px;
+	760px => 620px
+	
+------------------------------
+card placed more width altenatively
+.cards-up-down-placing :: width chnaged and margin-top rule changed ::
+----------------------------------------------------------------------
+	added 02.01.01 => 
+	added 02.01.02 =>
+	added 02.01.03 =>
+	added 02.01.04 =>
+	added 02.01.05 =>
+------------------------------
+
+
+
+
+Up-down-section...
+.go-to-deatil-icon => .goto-detail-icon (35 times in HTML) (3 times in css)
+
+
+  <!-- 4th section:: up-down-section -->
+  <!-- 5th section:: cards-row-galry-section -->
+          <!-- slider 01 :: section --> card-bx-pl-ul-hover-t1
+          <!-- slider 02 :: section -->  card-bx-pl-ul-hover-t2
+  
+  1) wrap the whole div in anchor tag with class="card-bx-pl-ul-hover-t1":: ...
+  2) remove anchor tag and add <div> inside ::
+  
+  
+ <!-- added 03.01 :: box-shadow on hover :: full div in a tag -->
+ <!-- added 03.02 :: box-shadow on hover :: full div in a tag -->
+ <!-- added 03.03 :: box-shadow on hover :: full div in a tag -->
+ <!-- added 03.04 :: box-shadow on hover :: full div in a tag -->
+ 
+ /* added 03.01 */ card-bx-pl-ul-hover-t1
+ /* added 03.02 */ card-bx-pl-ul-hover-t1
+ /* added 03.03 */. card-bx-pl-ul-hover-t1
+ 
+ "Public =>
+ "/typo3conf/ext/providerpackage/Resources/Public
+ 
+ '/public => 
+-
+
+ ----------------------------------------------------------------------------------
+ 
+ /typo3conf/ext/providerpackage/Resources/ => (11 times)
+ /typo3conf/ext/providerpackage/Resources/ => (03 times)
+ 
+ 
+ 
+ Blue-badge-circle :: full and dotted 
+ dotted square bg on image ::
+ 
+
+  
+iampritesh13@gmail.com
+Kashi@65
+
+
+https://vital-hotel.at.julius.koerbler.com/typo3conf/ext/providerpackage/Resources/Public/Images/wavy-v5.png
+
+"/Public/Images/wavy-v5.png"
+
+
+
+top: 100%;
+    width: 100%;
